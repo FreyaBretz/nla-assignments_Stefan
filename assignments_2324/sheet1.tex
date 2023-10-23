@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class winter semester 2023/2024
+% Sheet 1                             
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until October 25, 2023, 11am.]
+  \label{sheet1}
+  
+  Please hand in your solutions in groups of two to four. 
+  The solutions for non-programming problems and the discussion of the programming problems should be handed in on paper (Mathematikon, 1st floor, letterbox 27). 
+  The code for programming problems should be handed in via Moodle by one person in your group. 
+  To recieve the points for the exercises on Müsli, write everyones first and last name on every hand-in. 
+  Details will be discussed in the exercise groups on Friday. 
+  If you currently don’t have access to Moodle, please contact your tutor Laura in the exercise group (or via Müsli/Mail). 
+  If you want to get comments on your code, please also print it out and hand it in with the other solutions.
+  
+\begin{Problem}
+  Review the following items and write down at least one of the
+  definitions and one of the theorems with proof in detail.
+  \begin{itemize}
+  \item Definition of a projection
+  \item Definition of an orthogonal projection
+  \item Theorem: Orthogonal projection is uniquely determined by
+    subspace
+
+    Consider a finite-dimensional space $V$ with inner product
+    $\scal(\cdot,\cdot)$ and a subspace $W\subset V$. Then, there
+    exists a unique orthogonal projection
+    \begin{gather*}
+       P_W:V\to W.
+    \end{gather*}
+  \item Theorem: Best Approximation Theorem
+
+    Let $W$ be a subspace of $\R^n$, let $\vx$ be any vector in
+    $\R^n$, and let $\tilde{\vx}$ be the orthogonal projection of
+    $\vx$ onto $W$. Then $\tilde{\vx}$ is the closest point in $W$ to
+    $\vx$, in the sense that
+    \begin{gather*}
+      \norm{\vx - \tilde{\vx}} < \norm{\vx - \vw}
+    \end{gather*}
+    for all $\vw$ in $W$ distinct from $\vx$.
+  \item Theorem: Orthogonal projection in orthonormal basis
+    
+    Let $B = \{\vu_1,\vu_2, ...,\vu_p\}$ be an orthonormal basis of a
+    subspace $W$ of a finite-dimensional space $V$ with inner product
+    $\scal(\cdot,\cdot)$. Then, the orthogonal projection $P_i$ of any
+    vector $\vv\in V$ onto $\vu_i$, and the orthogonal projection
+    $P_W$ of any vector $\vv\in V$ onto $W$ have the following
+    expressions, respectively:
+    \begin{gather*}
+      P_i(\vv) = \scal(\vv, \vu_i) \vu_i,\qquad i = 1, 2, ..., p,
+      \\
+      P_W(\vv) = \sum_{i=1}^p \scal(\vv, \vu_i) \vu_i,
+    \end{gather*}
+    and
+    \begin{gather*}
+      \vv = P_W(\vv) + \vz,\qquad \vz \perp W.
+    \end{gather*}
+
+  \item Theorem: Parseval identity
+
+    Suppose that $W$ is a finite-dimensional linear space with inner
+    product $\scal(\cdot,\cdot)$. Let $\{\ve_i\}$, $i=1,...,n$ be an
+    orthonormal basis of $W$. Then, for every $\vw\in W$ it holds
+    \begin{gather*}
+      \sum_{i=1}^n \abs{\scal(\vw,\ve_i)}^2
+      = \norm{\vw}^2.
+    \end{gather*}
+  \end{itemize}
+\end{Problem}
+
+\begin{Problem}[Programming]
+  Problem 1.1.4 in the Lecture Notes.
+\end{Problem}
+
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

@@ -1,0 +1,72 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{problemsheet_mathsim}[2022/10/22 Mathematical Methods of Simulation]
+
+\RequirePackage{mathsim}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\nfrac}[2]{#1/#2}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\vd}{\mathbf d}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Counters and their representation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{sheet}
+
+% cleveref customization
+\renewcommand{\cref}{\Cref}
+\makeatletter
+\if@cref@capitalise
+\crefname{sheet}{Sheet}{Sheets}
+\else
+\crefname{sheet}{sheet}{sheets}
+\fi
+\makeatother
+\Crefname{sheet}{Sheet}{Sheets}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theorem and related environments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{classproblem}{Problem}
+\renewenvironment{Problem}{\begin{classproblem}}{\end{classproblem}}
+\newtheorem{Solution}{Solution}
+\newtheorem*{Solution*}{Solution}
+
+\newenvironment{Sheet}[1][???]{%
+  \pagenumbering{arabic}
+  \refstepcounter{sheet}
+  \setcounter{classproblem}{0}
+  \begin{center}
+    {\huge\textbf{Numerical Linear Algebra - Sheet~\thesheet}}
+
+    #1 \vskip6ex\end{center}}{}
+
+\newenvironment{SolutionSheet}[1][???]{%
+  \pagenumbering{arabic}
+  \setcounter{Solution}{0}
+  \begin{center}
+    {\huge\textbf{Numerical Linear Algebra - Sheet~#1}
+
+    \textbf{Solutions}}\vskip6ex\end{center}}{}
+
+\lstset{%
+  language=Python,numbers=left,%
+  resetmargins=true,xleftmargin=8pt,%
+  basicstyle=\small,numberstyle=\scriptsize}
+
+\newtheorem{classalgorithm}{Algorithm}
+\newtheorem*{classalgorithm*}{Algorithm}
+\renewenvironment{Algorithm}[1][]{\par\medskip
+  \begin{minipage}[H]{0.03\textwidth}
+    \hfill
+  \end{minipage}%
+  \begin{minipage}[H]{0.94\textwidth}
+    % \begin{tcolorbox}[colback=white]%
+    \begin{classalgorithm*}[#1]\hfill%
+    }{\end{classalgorithm*}%
+    % \end{tcolorbox}%
+  \end{minipage}
+  \medskip
+}

@@ -1,0 +1,1641 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.2)  23 OCT 2023 10:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(./problemsheet_mathsim.sty
+Package: problemsheet_mathsim 2022/10/22 Mathematical Methods of Simulation
+ (./mathsim.sty
+Package: mathsim 2013/08/01 Mathematical Methods of Simulation
+ (./slidetheorem.sty
+Package: slidetheorem 2018/04/17 SlideTheorem
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/usr/share/texlive/texmf-dist/tex/latex/stringstrings/stringstrings.sty
+Package: stringstrings 2015/02/02 v1.23 Extensive array of string manipulation 
+routines for cosmetic and programming application
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@@letterindex=\count175
+\c@@@letterindex=\count176
+\c@@@@letterindex=\count177
+\c@@wordindex=\count178
+\c@@iargc=\count179
+\c@@gobblesize=\count180
+\c@@maxrotation=\count181
+\c@@stringsize=\count182
+\c@@@stringsize=\count183
+\c@@@@stringsize=\count184
+\c@@revisedstringsize=\count185
+\c@@gobbleindex=\count186
+\c@@charsfound=\count187
+\c@@alph=\count188
+\c@@alphaindex=\count189
+\c@@capstrigger=\count190
+\c@@fromindex=\count191
+\c@@toindex=\count192
+\c@@previousindex=\count193
+\c@@flag=\count194
+\c@@matchloc=\count195
+\c@@matchend=\count196
+\c@@matchsize=\count197
+\c@@matchmax=\count198
+\c@@skipped=\count199
+\c@@lcwords=\count266
+\c@@@matchloc=\count267
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks15
+\pgfutil@tempdima=\dimen135
+\pgfutil@tempdimb=\dimen136
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box45
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks16
+\pgfkeys@temptoks=\toks17
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks18
+))
+\pgf@x=\dimen139
+\pgf@y=\dimen140
+\pgf@xa=\dimen141
+\pgf@ya=\dimen142
+\pgf@xb=\dimen143
+\pgf@yb=\dimen144
+\pgf@xc=\dimen145
+\pgf@yc=\dimen146
+\pgf@xd=\dimen147
+\pgf@yd=\dimen148
+\w@pgf@writea=\write4
+\r@pgf@reada=\read2
+\c@pgf@counta=\count268
+\c@pgf@countb=\count269
+\c@pgf@countc=\count270
+\c@pgf@countd=\count271
+\t@pgf@toka=\toks19
+\t@pgf@tokb=\toks20
+\t@pgf@tokc=\toks21
+\pgf@sys@id@count=\count272
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count273
+\pgfsyssoftpath@bigbuffer@items=\count274
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen149
+\pgfmath@count=\count275
+\pgfmath@box=\box46
+\pgfmath@toks=\toks22
+\pgfmath@stack@operand=\toks23
+\pgfmath@stack@operation=\toks24
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count276
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen150
+\pgf@picmaxx=\dimen151
+\pgf@picminy=\dimen152
+\pgf@picmaxy=\dimen153
+\pgf@pathminx=\dimen154
+\pgf@pathmaxx=\dimen155
+\pgf@pathminy=\dimen156
+\pgf@pathmaxy=\dimen157
+\pgf@xx=\dimen158
+\pgf@xy=\dimen159
+\pgf@yx=\dimen160
+\pgf@yy=\dimen161
+\pgf@zx=\dimen162
+\pgf@zy=\dimen163
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen164
+\pgf@path@lasty=\dimen165
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen166
+\pgf@shorten@start@additional=\dimen167
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box47
+\pgf@hbox=\box48
+\pgf@layerbox@main=\box49
+\pgf@picture@serial@count=\count277
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen168
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen169
+\pgf@pt@y=\dimen170
+\pgf@pt@temp=\dimen171
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen172
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen173
+\pgf@sys@shading@range@num=\count278
+\pgf@shadingcount=\count279
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box50
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box51
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen174
+\pgf@nodesepend=\dimen175
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks25
+\verbatim@line=\toks26
+\verbatim@in@stream=\read3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count280
+)
+\tcb@titlebox=\box52
+\tcb@upperbox=\box53
+\tcb@lowerbox=\box54
+\tcb@phantombox=\box55
+\c@tcbbreakpart=\count281
+\c@tcblayer=\count282
+\tcolorbox@number=\count283
+\tcb@temp=\box56
+\tcb@temp=\box57
+\tcb@temp=\box58
+\tcb@temp=\box59
+\tcb@out=\write5
+\tcb@record@out=\write6
+)
+\c@slidetheorem=\count284
+\sthm@list=\write7
+\openout7 = `main.stm'.
+
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks28
+\thm@bodyfont=\toks29
+\thm@headfont=\toks30
+\thm@notefont=\toks31
+\thm@headpunct=\toks32
+\thm@preskip=\skip49
+\thm@postskip=\skip50
+\thm@headsep=\skip51
+\dth@everypar=\toks33
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks34
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks35
+\ex@=\dimen176
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen177
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count285
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count286
+\leftroot@=\count287
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count288
+\DOTSCASE@=\count289
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box60
+\strutbox@=\box61
+\big@size=\dimen178
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count290
+\c@MaxMatrixCols=\count291
+\dotsspace@=\muskip16
+\c@parentequation=\count292
+\dspbrk@lvl=\count293
+\tag@help=\toks36
+\row@=\count294
+\column@=\count295
+\maxfields@=\count296
+\andhelp@=\toks37
+\eqnshift@=\dimen179
+\alignsep@=\dimen180
+\tagshift@=\dimen181
+\tagwidth@=\dimen182
+\totwidth@=\dimen183
+\lineht@=\dimen184
+\@envbody=\toks38
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks39
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amscd.sty
+Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
+\athelp@=\toks40
+\minaw@=\dimen185
+\bigaw@=\dimen186
+\minCDarrowwidth=\dimen187
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count297
+\calc@Bcount=\count298
+\calc@Adimen=\dimen188
+\calc@Bdimen=\dimen189
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count299
+\calc@Cskip=\skip57
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count300
+\l_MT_multwidth_dim=\dimen190
+\origjot=\skip58
+\l_MT_shortvdotswithinadjustabove_dim=\dimen191
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen192
+\l_MT_above_intertext_sep=\dimen193
+\l_MT_below_intertext_sep=\dimen194
+\l_MT_above_shortintertext_sep=\dimen195
+\l_MT_below_shortintertext_sep=\dimen196
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks41
+\inpenc@posthook=\toks42
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+Package babel Info: You haven't specified a language. I'll use 'nil'
+(babel)             as the main language. Reported on input line 572.
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2020/02/14 3.40 Nil language
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count301
+\U@D=\dimen197
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read4
+\bbl@dirlevel=\count302
+)
+\l@nil=\language85
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen198
+\Hy@linkcounter=\count303
+\Hy@pagecounter=\count304
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count305
+\pdfmajorversion=\count306
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count307
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen199
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count308
+\Field@Width=\dimen256
+\Fld@charsize=\dimen257
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count309
+\c@Item=\count310
+\c@Hfootnote=\count311
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count312
+\c@bookmark@seq@number=\count313
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `amsthm' support loaded on input line 3026.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xr.sty
+Package: xr 2019/07/22 v5.05 eXternal References (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip60
+\L@UnitsRaiseTextstyle=\skip61
+\L@UnitsRaiseScriptstyle=\skip62
+)
+(/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip63
+\fb@frw=\dimen258
+\fb@frh=\dimen259
+\FrameRule=\dimen260
+\FrameSep=\dimen261
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip64
+\subfigcapskip=\skip65
+\subfigcaptopadj=\dimen262
+\subfigbottomskip=\skip66
+\subfigcapmargin=\dimen263
+\subfiglabelskip=\skip67
+\c@subfigure=\count314
+\c@lofdepth=\count315
+\c@subtable=\count316
+\c@lotdepth=\count317
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip68
+\subfig@bottom=\skip69
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count318
+\lst@gtempboxa=\box62
+\lst@token=\toks44
+\lst@length=\count319
+\lst@currlwidth=\dimen264
+\lst@column=\count320
+\lst@pos=\count321
+\lst@lostspace=\dimen265
+\lst@width=\dimen266
+\lst@newlines=\count322
+\lst@lineno=\count323
+\lst@maxwidth=\dimen267
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count324
+\lst@skipnumbers=\count325
+\lst@framebox=\box63
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count326
+\c@ALG@rem=\count327
+\c@ALG@nested=\count328
+\ALG@tlm=\skip70
+\ALG@thistlm=\skip71
+\c@ALG@Lnr=\count329
+\c@ALG@blocknr=\count330
+\c@ALG@storecount=\count331
+\c@ALG@tmpcounter=\count332
+\ALG@tmplength=\skip72
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen268
+\pgffor@skip=\dimen269
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count333
+\pgfplotmarksize=\dimen270
+)
+\tikz@lastx=\dimen271
+\tikz@lasty=\dimen272
+\tikz@lastxsaved=\dimen273
+\tikz@lastysaved=\dimen274
+\tikz@lastmovetox=\dimen275
+\tikz@lastmovetoy=\dimen276
+\tikzleveldistance=\dimen277
+\tikzsiblingdistance=\dimen278
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count334
+\tikznumberofchildren=\count335
+\tikznumberofcurrentchild=\count336
+\tikz@fig@count=\count337
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count338
+\pgfmatrixcurrentcolumn=\count339
+\pgf@matrix@numberofcolumns=\count340
+)
+\tikz@expandcount=\count341
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tikzscale/tikzscale.sty
+Package: tikzscale 2013/05/22 v0.2.6 tikzscale LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count342
+\l__pdf_internal_box=\box68
+))
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count343
+\g__xparse_grabber_int=\count344
+\l__xparse_m_args_int=\count345
+\l__xparse_v_nesting_int=\count346
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count347
+\decimalpart=\count348
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+\tikzscale@measuredSize=\box69
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+Package: tikz-cd 2018/11/19 v0.9f Commutative diagrams with TikZ
+
+(/usr/share/texlive/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
+code.tex
+File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowinset=\dimen279
+\pgfarrowlength=\dimen280
+\pgfarrowwidth=\dimen281
+\pgfarrowlinewidth=\dimen282
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfpu.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+))
+\tikz@math@for@depth=\count349
+\tikz@math@dimen=\dimen283
+\tikz@math@toks=\toks47
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks48
+\XKV@tempa@toks=\toks49
+)
+\XKV@depth=\count350
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box70
+)
+\tc@llx=\dimen284
+\tc@lly=\dimen285
+\tc@urx=\dimen286
+\tc@ury=\dimen287
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen288
+\adjbox@Height=\dimen289
+\adjbox@Depth=\dimen290
+\adjbox@Totalheight=\dimen291
+\adjbox@pwidth=\dimen292
+\adjbox@pheight=\dimen293
+\adjbox@pdepth=\dimen294
+\adjbox@ptotalheight=\dimen295
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count351
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box71
+\sift@deathcycles=\count352
+\@vwid@loff=\dimen296
+\@vwid@roff=\dimen297
+)))
+\c@sheet=\count353
+\c@classproblem=\count354
+\c@Solution=\count355
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+\c@classalgorithm=\count356
+)
+\tikzscale@accuracy=\skip73
+ (./main.aux
+(./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux)
+(./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux)
+(./sheet5.aux) (./sheet5_sol.aux) (./sheet6.aux) (./sheet6_sol.aux)
+(./sheet7.aux) (./sheet7_sol.aux) (./sheet8.aux) (./sheet8_sol.aux)
+(./sheet9.aux) (./sheet9_sol.aux) (./sheet10.aux
+
+LaTeX Warning: Label `DeuflhardHohmann08' multiply defined.
+
+
+LaTeX Warning: Label `Rannacher17' multiply defined.
+
+
+LaTeX Warning: Label `Stoer83' multiply defined.
+
+) (./sheet10_sol.aux) (./sheet11.aux) (./sheet11_sol.aux) (./sheet12.aux
+
+LaTeX Warning: Label `DeuflhardHohmann08' multiply defined.
+
+
+LaTeX Warning: Label `Rannacher17' multiply defined.
+
+
+LaTeX Warning: Label `Stoer83' multiply defined.
+
+) (./sheet12_sol.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count357
+\scratchdimen=\dimen298
+\scratchbox=\box72
+\nofMPsegments=\count358
+\nofMParguments=\count359
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count360
+\MPscratchDim=\dimen299
+\MPnumerator=\count361
+\makeMPintoPDFobject=\count362
+\everyMPtoPDFconversion=\toks51
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box73
+Package hyperref Info: Link coloring OFF on input line 6.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count363
+)
+LaTeX Info: Redefining \ref on input line 6.
+LaTeX Info: Redefining \pageref on input line 6.
+LaTeX Info: Redefining \nameref on input line 6.
+
+(./main.out) (./main.out)
+\@outlinefile=\write8
+\openout8 = `main.out'.
+
+LaTeX Info: Redefining \celsius on input line 6.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 6.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 6.
+Package gensymb Info: Using \Omega for \ohm on input line 6.
+
+Package gensymb Warning: Not defining \micro.
+
+\c@lstlisting=\count364
+\openout2 = `sheet1.aux'.
+
+(./sheet1.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
+8.
+
+(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+Overfull \hbox (4.98555pt too wide) in paragraph at lines 36--42
+\OML/cmm/m/it/10 P[]$ \T1/cmr/m/n/10 of any vector $\OT1/cmr/bx/n/10 v \OMS/cms
+y/m/n/10 2 \OML/cmm/m/it/10 V$ \T1/cmr/m/n/10 onto $\OML/cmm/m/it/10 W$ \T1/cmr
+/m/n/10 have the following expressions, respectively: 
+ []
+
+
+Overfull \hbox (2.53416pt too wide) in paragraph at lines 65--67
+[]\T1/cmr/bx/n/10 Problem 2. []\T1/cmr/m/n/10 Proof that every finite-dimension
+al vector space with scalar product
+ []
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (4.88666pt too wide) in paragraph at lines 85--87
+[]\T1/cmr/m/n/10 Generates an orthonormal basis from a given set of $\OML/cmm/m
+/it/10 n$ $n$\T1/cmr/m/n/10 -dimensional complex
+ []
+
+) [2]
+\openout2 = `sheet2.aux'.
+
+ (./sheet2.texpdfTeX warning (ext4): destination with the same identifier (name
+{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{classproblem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24   \begin{Problem}
+                      
+Overfull \hbox (6.19994pt too wide) in paragraph at lines 25--28
+[]\T1/cmr/bx/n/10 Problem 3. []\T1/cmr/m/n/10 Construct a counterexample that t
+he problem of finding eigenvectors
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.
+4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30   \begin{Problem}
+                      )pdfTeX warning (ext4): destination with the same identif
+ier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.10 \include{sheet2}
+                      [1
+
+
+]
+\openout2 = `sheet3.aux'.
+
+ (./sheet3.texpdfTeX warning (ext4): destination with the same identifier (name
+{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{classproblem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42   \begin{Problem}
+                      
+Overfull \hbox (16.24191pt too wide) in paragraph at lines 44--46
+[]\T1/cmr/bx/n/10 Problem 3. []\T1/cmr/m/n/10 Propose shift parameters that wil
+l allow you to compute \T1/cmr/m/it/10 all \T1/cmr/m/n/10 eigenvalues
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.
+4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58   \begin{Problem}
+                      [Programming]pdfTeX warning (ext4): destination with the 
+same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81       \begin{todo}
+                        [1
+
+
+])pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 \include{sheet3}
+                      [2]
+\openout2 = `sheet4.aux'.
+
+ (./sheet4.texpdfTeX warning (ext4): destination with the same identifier (name
+{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{classproblem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28   \begin{Problem}
+                      )pdfTeX warning (ext4): destination with the same identif
+ier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 \include{sheet4}
+                      [1
+
+
+]
+\openout2 = `sheet5.aux'.
+
+ (./sheet5.texpdfTeX warning (ext4): destination with the same identifier (name
+{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{classproblem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.50   \begin{Problem}
+                      [Programming])pdfTeX warning (ext4): destination with the
+ same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 \include{sheet5}
+                      [1
+
+
+]
+\openout2 = `sheet6.aux'.
+
+ (./sheet6.texpdfTeX warning (ext4): destination with the same identifier (name
+{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{classproblem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87       \begin{todo}
+                        [1
+
+
+])pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 \include{sheet6}
+                      [2]
+\openout2 = `sheet7.aux'.
+
+ (./sheet7.texpdfTeX warning (ext4): destination with the same identifier (name
+{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{classproblem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25   \begin{Problem}
+                      [Eigenvalues and eigenvectors of a tensor product
+Overfull \hbox (25.73477pt too wide) in paragraph at lines 52--55
+\T1/cmr/m/n/10 products of the eigenvectos of the individual matrices. What are
+ the corresponding
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.
+3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.98     \end{gather*}
+                       [1
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{classproblem
+.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110   \begin{Problem}
+                       [Programming])pdfTeX warning (ext4): destination with th
+e same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \include{sheet7}
+                      [2]
+\openout2 = `sheet8.aux'.
+
+ (./sheet8.texpdfTeX warning (ext4): destination with the same identifier (name
+{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{classproblem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38   \begin{Problem}
+                      [{\cite[P-5.1 b]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 1 undefined on input line 38.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68       \end{todo}
+                      [1
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{classproblem
+.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.74   \begin{Problem}
+                      [{\cite[P-5.6]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 2 undefined on input line 74.
+
+
+Overfull \hbox (2.06027pt too wide) in paragraph at lines 81--85
+[]\T1/cmr/m/n/10 For a basis of $\OML/cmm/m/it/10 K$ \T1/cmr/m/n/10 use the vec
+tor $\OT1/cmr/bx/n/10 r$ \T1/cmr/m/n/10 and the vector $\OT1/cmr/bx/n/10 p$ \T1
+/cmr/m/n/10 obtained by orthogonalizing
+ []
+
+
+Overfull \hbox (13.54642pt too wide) in paragraph at lines 87--90
+\T1/cmr/m/it/10 Hint: Exploit the convergence results for one-dimensional proje
+ction techniques. 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.
+4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93   \begin{Problem}
+                      [Programming]
+(/export/home/fbretz/Documents/notes_Guido/numerik/main.bbl
+Underfull \hbox (badness 5460) in paragraph at lines 9--13
+[]\T1/cmr/m/n/10 R. Rannacher.  \T1/cmr/m/it/10 Numerik 0. Einführung in die Nu
+merische
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 9--13
+\T1/cmr/m/it/10 Mathematik\T1/cmr/m/n/10 .  Lecture Notes Mathematik. Heidelber
+g University
+ []
+
+))pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22 \include{sheet8}
+                      [2]
+\openout2 = `sheet9.aux'.
+
+ (./sheet9.texpdfTeX warning (ext4): destination with the same identifier (name
+{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31   \begin{Problem}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{classproblem.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37   \begin{Problem}
+                      )pdfTeX warning (ext4): destination with the same identif
+ier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 \include{sheet9}
+                      [1
+
+
+]
+\openout2 = `sheet10.aux'.
+
+ (./sheet10.texpdfTeX warning (ext4): destination with the same identifier (nam
+e{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     [{\cite[Exercise 6.21]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 1 undefined on input line 9.
+
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46   \begin{Problem}
+                      [{\cite[Exercise 6.8]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 1 undefined on input line 46.
+
+
+LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
+(Font)              using `U/stmry/m/n' instead on input line 65.
+
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.
+3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68   \begin{Problem}
+                      [Programming]pdfTeX warning (ext4): destination with the 
+same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.84     \end{enumerate}
+                         [1
+
+
+]
+(/export/home/fbretz/Documents/notes_Guido/numerik/main.bblpdfTeX warning (ext4
+): destination with the same identifier (name{cite.DeuflhardHohmann08}) has bee
+n already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \bibitem[DH08]{DeuflhardHohmann08}
+                                      pdfTeX warning (ext4): destination with t
+he same identifier (name{cite.Rannacher17}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.8 \bibitem[Ran17]{Rannacher17}
+                                
+Underfull \hbox (badness 5460) in paragraph at lines 9--13
+[]\T1/cmr/m/n/10 R. Rannacher.  \T1/cmr/m/it/10 Numerik 0. Einführung in die Nu
+merische
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 9--13
+\T1/cmr/m/it/10 Mathematik\T1/cmr/m/n/10 .  Lecture Notes Mathematik. Heidelber
+g University
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Stoer83}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 \bibitem[Sto83]{Stoer83}
+                             ))pdfTeX warning (ext4): destination with the same
+ identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 \include{sheet10}
+                       [2]
+\openout2 = `sheet11.aux'.
+
+ (./sheet11.texpdfTeX warning (ext4): destination with the same identifier (nam
+e{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{classproblem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24   \begin{Problem}
+                      )pdfTeX warning (ext4): destination with the same identif
+ier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28 \include{sheet11}
+                       [1
+
+
+]
+\openout2 = `sheet12.aux'.
+
+ (./sheet12.texpdfTeX warning (ext4): destination with the same identifier (nam
+e{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     [{\cite[P-6.8]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 1 undefined on input line 9.
+
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19   \begin{Problem}
+                      [{\cite[P-6.9]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 1 undefined on input line 19.
+
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.
+3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27   \begin{Problem}
+                      
+(/export/home/fbretz/Documents/notes_Guido/numerik/main.bblpdfTeX warning (ext4
+): destination with the same identifier (name{cite.DeuflhardHohmann08}) has bee
+n already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \bibitem[DH08]{DeuflhardHohmann08}
+                                      pdfTeX warning (ext4): destination with t
+he same identifier (name{cite.Rannacher17}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.8 \bibitem[Ran17]{Rannacher17}
+                                
+Underfull \hbox (badness 5460) in paragraph at lines 9--13
+[]\T1/cmr/m/n/10 R. Rannacher.  \T1/cmr/m/it/10 Numerik 0. Einführung in die Nu
+merische
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 9--13
+\T1/cmr/m/it/10 Mathematik\T1/cmr/m/n/10 .  Lecture Notes Mathematik. Heidelber
+g University
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Stoer83}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 \bibitem[Sto83]{Stoer83}
+                             ))pdfTeX warning (ext4): destination with the same
+ identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30 \include{sheet12}
+                       [1
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
+ (./main.aux (./sheet1.aux) (./sheet2.aux)
+(./sheet3.aux) (./sheet4.aux) (./sheet5.aux) (./sheet6.aux) (./sheet7.aux)
+(./sheet8.aux) (./sheet9.aux) (./sheet10.aux) (./sheet11.aux) (./sheet12.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 29739 strings out of 481239
+ 565788 string characters out of 5920378
+ 1009808 words of memory out of 5000000
+ 44224 multiletter control sequences out of 15000+600000
+ 545853 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 83i,16n,92p,868b,1448s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Item.55} has been referenced but does not exist, 
+replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fo
+nts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pf
+b>
+Output written on main.pdf (18 pages, 268254 bytes).
+PDF statistics:
+ 266 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+
