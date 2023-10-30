@@ -3,9 +3,11 @@
 % Sheet 3                             
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{Sheet}[to be handed in until November 11, 2022, 2pm.]
+\begin{Sheet}[to be handed in until November 8, 2023, 11am.]
   \label{sheet3}
-
+  
+  \textbf{Normal and Hermitian Matrices}
+  
   \begin{Problem}
     Consider a Hermitian matrix $\mata\in\C^{n\times n}$ and a unitary
     linear operator $\matq\in\C^m\to\C^n$, $m<n$. Prove, that an
@@ -21,6 +23,56 @@
     the smallest and largest eigenvalues of $\mata$ measured by their
     magnitude.
   \end{Problem}
+
+  \begin{Problem}
+  	Show that a normal triangular matrix is diagonal. \textit{Hint:}
+  	look at the norms of $\mata \ve_i$ and $\mata^*\ve_i$.
+  \end{Problem}
+
+  \textbf{Well-posedness of EVP}
+
+  \begin{Problem}
+  	Construct a counterexample that the problem of finding
+  	eigenvectors is \textit{not} well-posed, if the eigenspaces are
+  	almost parallel.
+  \end{Problem}
+
+  \begin{Problem}
+  	Consider the following matrix
+  	\begin{gather*}
+  	\mata =
+  	\begin{pmatrix}
+  	\cos\phi & -\sin\phi\\
+  	\sin\phi &  \cos\phi
+  	\end{pmatrix}^T
+  	\begin{pmatrix}
+  	1 & \\
+  	& c
+  	\end{pmatrix}
+  	\begin{pmatrix}
+  	\cos\phi & -\sin\phi\\
+  	\sin\phi &  \cos\phi
+  	\end{pmatrix}
+  	\end{gather*}
+  	with parameters $\phi\in[0,2\pi]$ and $c\in(0,1)$.
+  	\begin{enumerate}
+  		\item Compute the eigenvalues and eigenvectors of $\mata$.
+  		\item (Programming) Write a program which computes the sequence
+  		$\vx^{(n)}\in\R^2$ defined as
+  		\begin{align*}
+  		\vx^{(n)} &= \mata \vx^{(n-1)}, \\
+  		\vx^{(0)} &= \vx^{*},
+  		\end{align*}
+  		for $\vx^{*} = (1,\ 0)^T$, $c = 0.1$, and
+  		$\phi=\frac\pi4$. Try playing with different values of those
+  		parameters.
+  		\item Is there a limit of $\vx^{(n)}$? What is about the case
+  		$c=1$?
+  		\item Compute the limit: $\lim_{n\to\infty}\mata^n$.
+  	\end{enumerate}
+  \end{Problem}
+
+  \textbf{Vector Iterations: Simple Iterations}
 
   \begin{Problem}
     A diagonalizable real matrix $\mata$ has the following spectrum:
@@ -75,19 +127,9 @@
     \item\label{sheet3:prob4:parta} Consider the matrix $\mata_0$ with $\epsilon=0$ and examine
       the structure of the eigenvalue problem.
     \item Compute all eigenvalues and eigenvectors of $\mata_0$.
-    \item Would the strategy you proposed in
-      Problem~\ref{problem:shift} allow you to compute all 6
-      eigenvalues?
-      \begin{todo}
-        Rewrite: Does the algorithm work, if you use Gerschgorin for
-        ...
-      \end{todo}
-    \item Make an \textit{educated} guess of the eigenvalues of
-      $\mata_1$ and try computing those.
-      \begin{todo}
-        Can you use part \eqref{sheet3:prob4:parta} to get something
-        better
-      \end{todo}
+    \item Does the algorithm work, if you use Gerschgorin for the computation of all six eigenvalues?
+    \item Can you use part \eqref{sheet3:prob4:parta} to get something
+        better?
     \end{enumerate}
   \end{Problem}
 \end{Sheet}
