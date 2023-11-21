@@ -3,66 +3,52 @@
 % Sheet 5
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{Sheet}[to be handed in until November 25, 2022, 2pm.]
+\begin{Sheet}[to be handed in until November 22, 2023, 11am]
   \label{sheet5}
 
   \begin{Problem}
-    Show that a normal triangular matrix is diagonal. \textit{Hint:}
-    look at the norms of $\mata \ve_i$ and $\mata^*\ve_i$.
+  	Problem 2.4.16 in the Lecture Notes:
+  	\begin{enumerate}
+  		\item How many operations do the two versions of the Hessenberg QR step require?
+  		\item Show that if $\matH$ is Hermitian, the result of the
+  		Hessenberg QR step is Hermitian as well.
+  	\end{enumerate}
   \end{Problem}
 
   \begin{Problem}
-    Prove that in case of a normal real matrix, for each complex
-    eigenvalue pair there is a $2\times 2$ matrix with according
-    invariant subspace.
-    \begin{enumerate}[(a)]
-    \item Show that complex eigenvalues of a real matrix come in
-      complex conjugate pairs.
-      \begin{todo}
-        Show that complex eigenvalues and their associated
-        eigenvectors of a real matrix come in complex conjugate
-        pairs.
-
-        Delete (b)
-      \end{todo}
-    \item Show that the eigenvectors are of the form $\vu\pm i\vv$.
-    \item Choose real linear combinations of these vectors to obtain
-      the $2\times 2$ block.
-    \end{enumerate}
+	Problem 2.4.20 in the Lecture Notes:\\
+	Show that every (complex) Hermitian matrix is orthogonally similar
+	to a symmetric tridiagonal matrix with real entries.
   \end{Problem}
 
-  \begin{Problem}
-    Provide the following steps of Lemma 1.5.11 in the lecture notes
-    (explicit double shift).
-    \begin{enumerate}[(a)]
-    \item Show that $\matq_1\matq_2\matr_2\matr_1$ represents the QR
-      factorization of a real matrix
-      $\matm = (\matH - \sigma_1\id)(\matH - \sigma_2\id)$.
-    \item Show that $\matq_1\matq_2$ is the orthogonal matrix that
-      implements the similarity transformation of $\matH$ to obtain
-      $\matH_2$.
-      \begin{todo}
-        Adjust this exercise according to tutorial notes of Laura
-      \end{todo}
-    \end{enumerate}
-  \end{Problem}
+\begin{Problem}
+	\hfill\\\vspace{-6ex}
+	\begin{enumerate}[(a)]
+		\item Implement the implicit Hessenberg QR step (Algorithm 2.4.7 in the
+		lecture notes) in real arithmetic.
+		\item Test your code with the tridiagonal matrix
+		$\mata_n=\operatorname{tridiag}(-1.,2.,-1.)$ in dimension $n=4$.
+		\item Use your implementation to run several steps of the QR
+		iteration (Algorithm 2.4.19 in the lecture notes) for the matrix
+		$\mata_{10}$.
+		You should obtain the following eigenvalues:
+		\begin{equation*}
+		\lambda_j = 2 - 2\cos(j\theta) = 4\sin^2\left(\frac{j\theta}{2}\right)
+		\end{equation*}
+		where $\theta = \frac{\pi}{n+1}$, $1 \leq j \leq n$.
+		\item Discuss the observed convergence of the off-diagonal and
+		diagonal entries, respectively.
+	\end{enumerate}
+\end{Problem}
 
-  \begin{Problem}[Programming]
-    Implement the symmetric QR step with implicit shift (Algorithm
-    1.5.6 in lecture notes) for a symmetric, unreduced, tridiagonal
-    matrix $\matt$ by observing the following steps:
-    \begin{enumerate}[(a)]
-    \item Store $\matt$ in two vectors, one for the diagonal, and one
-      for the subdiagonal entries.
-    \item Implement the Givens rotation $\matg_{12}$ and think about
-      where to store the additional non-zero entry $t_{31}$.
-    \item Implement the additional Givens rotations for this data
-      structure.
-    \item Use this to compute the eigenvalues of the matrix
-      $\mata_n=\operatorname{tridiag}(-1.,2.,-1.)$ in dimension
-      $n=10$.
-    \end{enumerate}
-  \end{Problem}
+\begin{Problem}
+	\hfill\\\vspace{-6ex}
+	\begin{enumerate}[(a)]
+		\item Implement the QR iteration with shift (Algorithm 2.4.25 in the Lecture Notes) using the Wilkinson shift (Definition 2.4.30).
+		\item Test your implementation with the matrix $\mata_{10}$. Run several steps of the iteration and observe the behaviour of the subdiagonal elements, especially the last one.
+		\item For the curious: Implement the QR iteration with deflation (cf. Algorithm 2.4.35).
+	\end{enumerate} 		
+\end{Problem}
 
 \end{Sheet}
 
