@@ -3,13 +3,13 @@
 % Sheet 7
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{Sheet}[to be handed in until December 9, 2022, 2pm.]
+\begin{Sheet}[to be handed in until December 6, 2023, 11am.]
   \label{sheet7}
 
   \begin{Problem}
     Let $\mata$ be a real symmetric matrix with eigenvalues
     $\lambda_j$, $1\leq j\leq n$. Show that for any polynomial
-    $p(t) = \sum_{j=0}^k a_jt^j$
+    $p(t) = \sum_{j=0}^k a_jt^j$, $a_0,\ldots, a_k \in \mathbb{R}$,
     the matrix
     \begin{gather*}
       p(\mata) = \sum_{j=0}^k a_j\mata^j
@@ -17,9 +17,6 @@
     is also symmetric. Moreover, the eigenvectors of $\mata$ and
     $p(\mata)$ are identical, while the eigenvalues of $p(\mata)$ are
     equal to $p(\lambda_j)$ for $1\leq j\leq n$.
-    \begin{todo}
-      Definition missing: scalar $a_j\in\R$
-    \end{todo}
   \end{Problem}
 
   \begin{Problem}[Eigenvalues and eigenvectors of a tensor product
@@ -61,7 +58,7 @@
     operator on the unit square by the five-point stencel with a
     uniform Dirichlet boundary condition to the mesh size
     $h=\frac1{n+1}$.  In 1D it is given in terms of the matrix
-    $\matt_2$ defined in \cref{sheet6:problem2} of \cref{sheet6} by
+    $\matt_2$ defined in \cref{sheet6:problem4} of \cref{sheet6} by
     \begin{gather*}
       \matl_1 = \frac1{h^2}\matt_2 \in\R^{n\times n}.
     \end{gather*}
@@ -128,7 +125,8 @@
       \eqref{sheet7:problem4:parta} this function should take a vector
       $\vv$ and return the resulting vector $\vw$.
     \item Use the null-vector $\vx^{(0)} = (0,...,0)^T$ as initial
-      guess and test your program with $n=20$ and $n=100$. Observe the
+      guess and test your program with $n=20$ and $n=100$.
+      Let $\vb=(1,...,1)^T$. Observe the
       evolution of the residual in the 2-norm
       \begin{gather*}
         r^{(k)} = \norm{\mata\cdot\vx^{(k)}-\vb}_2
@@ -141,10 +139,6 @@
         build the system matrix, because of the possibly high memory
         usage.}
     \end{enumerate}
-
-    \begin{todo}
-      b has not been defined: $\vb=(1,...,1)^T$
-    \end{todo}
   \end{Problem}
 
 \end{Sheet}
