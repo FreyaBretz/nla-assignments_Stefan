@@ -7,52 +7,49 @@
   \label{sheet7}
 
   \begin{Problem}
-    Let $\mata$ be a real symmetric matrix with eigenvalues
-    $\lambda_j$, $1\leq j\leq n$. Show that for any polynomial
-    $p(t) = \sum_{j=0}^k a_jt^j$, $a_0,\ldots, a_k \in \mathbb{R}$,
-    the matrix
-    \begin{gather*}
-      p(\mata) = \sum_{j=0}^k a_j\mata^j
-    \end{gather*}
-    is also symmetric. Moreover, the eigenvectors of $\mata$ and
-    $p(\mata)$ are identical, while the eigenvalues of $p(\mata)$ are
-    equal to $p(\lambda_j)$ for $1\leq j\leq n$.
-  \end{Problem}
-
-  \begin{Problem}[Eigenvalues and eigenvectors of a tensor product
-      operator]
-     \label{sheet7:problem2}
-
-    For vectors $\vu\in\R^n$ and $\vv\in\R^m$ we define the tensor
-    product as a (block) vector
-    \begin{gather*}
-      \vu\otimes\vv =
-      \begin{pmatrix}
-        u_1v& u_2v& \cdots & u_nv
-      \end{pmatrix}^T \in\R^{nm}.
-    \end{gather*}
-    Let $\mata$ and $\matb$ be matrices in $\R^{n\times n}$ and
-    $\R^{m\times m}$ respectively. We define their tensor product
-    $\mata\otimes\matb\in\R^{nm\times nm}$ as
-    \begin{gather*}
-      \mata\otimes\matb =
-      \begin{pmatrix}
-        a_{11}\matb & \cdots & a_{1n}\matb \\
-        \vdots & \ddots & \vdots \\
-        a_{n1}\matb & \cdots & a_{nn}\matb
-      \end{pmatrix}.
-    \end{gather*}
-    \begin{enumerate}[(a)]
-    \item Show that
-      $(\mata\otimes\matb)(\vu\otimes\vv) =
-      (\mata\vu)\otimes(\matb\vv)$.
-    \item Prove that the eigenvectors of the tensor product are the
-      pairwise tensor products of the eigenvectos of the individual
-      matrices. What are the corresponding eigenvalues?
-    \end{enumerate}
+    Prove Theorem 3.2.15 in the Lecture Notes (Convergence of Richardson Iteration).
   \end{Problem}
 
   \begin{Problem}
+  	Gegeben seien die Zahlenfolgen
+  	\begin{center}
+  		\begin{tabular}{|r|r|r|r|}
+  			\hline $h$ & $a_h$ & $b_h$ & $c_h$ \\\hline
+  			1/2   & 1.07627    &  1.70051 & 0.429204    \\
+  			1/4   & 0.604185   &  1.71382 & 0.00455975  \\
+  			1/8   & 0.320317   &  1.71716 & 1.68691e-05 \\
+  			1/16  & 0.164945   &  1.71800 & 1.62880e-08 \\
+  			1/32  & 0.0836993  &  1.71821 & 3.96572e-12 \\
+  			1/64  & 0.0421601  &  1.71826 & 2.22045e-16 \\
+  			1/128 & 0.0211582  &  1.71828 & \\
+  			\hline
+  		\end{tabular}      
+  	\end{center}
+  	
+  	Die \textbf{Konvergenzordnung} einer Folge $x_h$ sei die größte
+  	Zahl $\varrho$ so dass
+  	$x_h = \mathcal O(h^\varrho)$ gilt. Sie kann berechnet werden als
+  	\begin{gather*}
+  	\varrho = \frac1{\log 2} \lim_{h\to 0} \log\left|\frac{x_h}{x_{\frac h2}}\right|.
+  	\end{gather*}        
+  	
+  	\begin{enumerate}
+  		\item Bestimmen Sie eine Approximation der Konvergenzordnung $\varrho$ für $a_h$.
+  		Welche Zeilen der Tabelle benutzen sie dazu am besten? Wie
+  		verifizieren Sie Ihr Ergebnis?
+  		\item Sei $b=\lim_{h\to0} b_h$. Bestimmen Sie ohne $b$ zu kennen
+  		die ``intrinsische'' Konvergenzordnung der Folge $b-b_h$. Nutzen
+  		Sie dazu die Darstellung $b-b_h = b-b_{h/2} + b_{h/2} - b_h$, um die Formel
+  		\begin{gather*}
+  		\varrho \approx \frac1{\log 2}
+  		\log \left|\frac{b_h - b_{\frac h2}}{b_{\frac h2} -b_{\frac h4}}\right|
+  		\end{gather*}
+  		zu rechtfertigen.
+  		\item Kommentieren Sie die Frage der Konvergenzordnung der Folge $c_h$
+  	\end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}[Programming]
     \label{sheet7:problem3}
     Let $\matl_d$ be the discretization of the $d$-dimensional Laplace
     operator on the unit square by the five-point stencel with a
@@ -60,84 +57,70 @@
     $h=\frac1{n+1}$.  In 1D it is given in terms of the matrix
     $\matt_2$ defined in \cref{sheet6:problem4} of \cref{sheet6} by
     \begin{gather*}
-      \matl_1 = \frac1{h^2}\matt_2 \in\R^{n\times n}.
+    \matl_1 = \frac1{h^2}\matt_2 \in\R^{n\times n}.
     \end{gather*}
     In 2D it is given by
     \begin{gather*}
-      \matl_2 = \frac1{h^2}
-      \begin{pmatrix}
-        \matd &   -\id & & & \\
-         -\id &  \matd & -\id   & & \\
-              & \ddots & \ddots & \ddots & \\
-              &        &   -\id &  \matd &   -\id\\
-              &        &        &   -\id &  \matd
-      \end{pmatrix}
-      \in\R^{n^2\times n^2},
+    \matl_2 = \frac1{h^2}
+    \begin{pmatrix}
+    \matd &   -\id & & & \\
+    -\id &  \matd & -\id   & & \\
+    & \ddots & \ddots & \ddots & \\
+    &        &   -\id &  \matd &   -\id\\
+    &        &        &   -\id &  \matd
+    \end{pmatrix}
+    \in\R^{n^2\times n^2},
     \end{gather*}
     where $\id\in\R^{n\times n}$ and $\matd\in\R^{n\times n}$ are
     defined as
     \begin{gather*}
-      \id =
-      \begin{pmatrix}
-        1 & & \\
-          & \ddots & \\
-          &        & 1
-      \end{pmatrix}
-      \quad\text{and}\quad
-      \matd =
-      \begin{pmatrix}
-         4 & -1 &    && \\
-        -1 &  4 & -1 && \\
-           & \ddots & \ddots & \ddots & \\
-           &    & -1 & 4 & -1 \\
-           &    &    & -1 & 4
-      \end{pmatrix}.
+    \id =
+    \begin{pmatrix}
+    1 & & \\
+    & \ddots & \\
+    &        & 1
+    \end{pmatrix}
+    \quad\text{and}\quad
+    \matd =
+    \begin{pmatrix}
+    4 & -1 &    && \\
+    -1 &  4 & -1 && \\
+    & \ddots & \ddots & \ddots & \\
+    &    & -1 & 4 & -1 \\
+    &    &    & -1 & 4
+    \end{pmatrix}.
     \end{gather*}
-    \begin{enumerate}[(a)]
-    \item Use the results of \cref{sheet7:problem2} to show that
-      $\matl_2$ could be expressed as
-      \begin{gather*}
-        \matl_2 = (\matl_1\otimes\id) + (\id\otimes \matl_1).
-      \end{gather*}
-    \item List the four smallest eigenvalues of $\matl_2$. What is
-      their multiplicity?
-    \end{enumerate}
-  \end{Problem}
-
-  \begin{Problem}[Programming]
-    \label{sheet7:problem4}
+    
+    Let $\mata=\matl_2\in\R^{n^2\times n^2}$ as defined above and $\vb=(1,...,1)^T$.
     Write a program that solves the 2D Laplace problem
     \begin{gather*}
       \mata\vx=\vb,
     \end{gather*}
-    with the Gauss-Seidel iteration, where the system matrix
-    $\mata=\matl_2\in\R^{n^2\times n^2}$ is defined in
-    \cref{sheet7:problem3}, and the right hand side is given by the
-    constant vector $\vb=(1,...,1)^T$, by observing the following
-    steps. Try to avoid explicitly forming the system matrix.
+    with the Richardson iteration by observing the following
+    steps:
     \begin{enumerate}[(a)]
     \item\label{sheet7:problem4:parta} Implement a function
       \lstinline{vmult} that performs the matrix-vector product
       $\mata\cdot\vv$ of $\mata$ with a given vector $\vv$, and
-      returns a vector $\vw$.
-    \item Write a function \lstinline{gauss_seidel_step} that
-      implements a single step of the Gauss-Seidel iteration. As in
+      returns a vector $\vw$. 
+      Do not explicitly form the system matrix in this function.
+      The parameters should only be the vector $\vv$ and, optionally, $n$.
+    \item Write a function \lstinline{richardson_step} that
+      implements a single step of the Richardson iteration. As in
       \eqref{sheet7:problem4:parta} this function should take a vector
-      $\vv$ and return the resulting vector $\vw$.
+      $\vv$, optionally $n$, and return the resulting vector $\vw$.
+      What is the optimal choice for the relaxation parameter $\omega_k$?
+      The eigenvalues of $\matl_2$ are given by the pairwise sums of the eigenvalues of $\matt_2$.
     \item Use the null-vector $\vx^{(0)} = (0,...,0)^T$ as initial
       guess and test your program with $n=20$ and $n=100$.
-      Let $\vb=(1,...,1)^T$. Observe the
-      evolution of the residual in the 2-norm
+      Observe the evolution of the residual in the 2-norm
       \begin{gather*}
         r^{(k)} = \norm{\mata\cdot\vx^{(k)}-\vb}_2
       \end{gather*}
-      for 50 steps of the Gauss-Seidel iteration.  Plot the obtained
+      for 50 steps of the Richardson iteration.  Plot the obtained
       result vector after 1, 5, 15, 30, and 50 iterations.
-
-      \textit{Note: Be careful not to crash your computer when
-        starting your program with $n=100$ or more, if you explicitly
-        build the system matrix, because of the possibly high memory
-        usage.}
+      \textit{Hint: For plotting you have to invert the numbering of the vector (use, for example, \lstinline{np.reshape}) and then plot the two dimensional grid using a numpy color map (greyscale).
+      	Details may be found in appendix B.3 on finite difference methods in the lecture notes. }      
     \end{enumerate}
   \end{Problem}
 
