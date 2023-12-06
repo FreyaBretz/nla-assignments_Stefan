@@ -10,45 +10,6 @@
     Prove Theorem 3.2.15 in the Lecture Notes (Convergence of Richardson Iteration).
   \end{Problem}
 
-  \begin{Problem}
-  	Gegeben seien die Zahlenfolgen
-  	\begin{center}
-  		\begin{tabular}{|r|r|r|r|}
-  			\hline $h$ & $a_h$ & $b_h$ & $c_h$ \\\hline
-  			1/2   & 1.07627    &  1.70051 & 0.429204    \\
-  			1/4   & 0.604185   &  1.71382 & 0.00455975  \\
-  			1/8   & 0.320317   &  1.71716 & 1.68691e-05 \\
-  			1/16  & 0.164945   &  1.71800 & 1.62880e-08 \\
-  			1/32  & 0.0836993  &  1.71821 & 3.96572e-12 \\
-  			1/64  & 0.0421601  &  1.71826 & 2.22045e-16 \\
-  			1/128 & 0.0211582  &  1.71828 & \\
-  			\hline
-  		\end{tabular}      
-  	\end{center}
-  	
-  	Die \textbf{Konvergenzordnung} einer Folge $x_h$ sei die größte
-  	Zahl $\varrho$ so dass
-  	$x_h = \mathcal O(h^\varrho)$ gilt. Sie kann berechnet werden als
-  	\begin{gather*}
-  	\varrho = \frac1{\log 2} \lim_{h\to 0} \log\left|\frac{x_h}{x_{\frac h2}}\right|.
-  	\end{gather*}        
-  	
-  	\begin{enumerate}
-  		\item Bestimmen Sie eine Approximation der Konvergenzordnung $\varrho$ für $a_h$.
-  		Welche Zeilen der Tabelle benutzen sie dazu am besten? Wie
-  		verifizieren Sie Ihr Ergebnis?
-  		\item Sei $b=\lim_{h\to0} b_h$. Bestimmen Sie ohne $b$ zu kennen
-  		die ``intrinsische'' Konvergenzordnung der Folge $b-b_h$. Nutzen
-  		Sie dazu die Darstellung $b-b_h = b-b_{h/2} + b_{h/2} - b_h$, um die Formel
-  		\begin{gather*}
-  		\varrho \approx \frac1{\log 2}
-  		\log \left|\frac{b_h - b_{\frac h2}}{b_{\frac h2} -b_{\frac h4}}\right|
-  		\end{gather*}
-  		zu rechtfertigen.
-  		\item Kommentieren Sie die Frage der Konvergenzordnung der Folge $c_h$
-  	\end{enumerate}
-  \end{Problem}
-
   \begin{Problem}[Programming]
     \label{sheet7:problem3}
     Let $\matl_d$ be the discretization of the $d$-dimensional Laplace
@@ -91,7 +52,9 @@
     \end{pmatrix}.
     \end{gather*}
     
-    Let $\mata=\matl_2\in\R^{n^2\times n^2}$ as defined above and $\vb=(1,...,1)^T$.
+    Details may be found in appendix B.3 on finite difference methods in the lecture notes. 
+    
+    Let $\mata=\matl_2\in\R^{n^2\times n^2}$ as defined above and $\vb\in \R^{n^2}$.
     Write a program that solves the 2D Laplace problem
     \begin{gather*}
       \mata\vx=\vb,
@@ -101,27 +64,27 @@
     \begin{enumerate}[(a)]
     \item\label{sheet7:problem4:parta} Implement a function
       \lstinline{vmult} that performs the matrix-vector product
-      $\mata\cdot\vv$ of $\mata$ with a given vector $\vv$, and
+      $\mata\vv$ of $\mata$ with a given vector $\vv$, and
       returns a vector $\vw$. 
-      Do not explicitly form the system matrix in this function.
+      Do not store the system matrix in this function.
       The parameters should only be the vector $\vv$ and, optionally, $n$.
     \item Write a function \lstinline{richardson_step} that
-      implements a single step of the Richardson iteration. As in
-      \eqref{sheet7:problem4:parta} this function should take a vector
-      $\vv$, optionally $n$, and return the resulting vector $\vw$.
-      What is the optimal choice for the relaxation parameter $\omega_k$?
-      The eigenvalues of $\matl_2$ are given by the pairwise sums of the eigenvalues of $\matt_2$.
+      implements a single step of the Richardson iteration. Similar to 
+      \eqref{sheet7:problem4:parta} this function should take vectors
+      $\vv$ and $\vb$, optionally $n$, and return the resulting vector $\vw$.
+      \textit{Hint: The eigenvalues of $\matl_2$ are given by the pairwise sums of the eigenvalues of $\matt_2$, see B.3.13.}
     \item Use the null-vector $\vx^{(0)} = (0,...,0)^T$ as initial
-      guess and test your program with $n=20$ and $n=100$.
+      guess and test your program for the constant vector $\vb=(1,...,1)^T$ with $n=20$ and $n=100$.
       Observe the evolution of the residual in the 2-norm
       \begin{gather*}
         r^{(k)} = \norm{\mata\cdot\vx^{(k)}-\vb}_2
       \end{gather*}
-      for 50 steps of the Richardson iteration.  Plot the obtained
-      result vector after 1, 5, 15, 30, and 50 iterations.
-      \textit{Hint: For plotting you have to invert the numbering of the vector (use, for example, \lstinline{np.reshape}) and then plot the two dimensional grid using a numpy color map (greyscale).
-      	Details may be found in appendix B.3 on finite difference methods in the lecture notes. }      
-    \end{enumerate}
+      for 50 steps of the Richardson iteration.  
+   \item Plot the obtained
+      result vector after 1, 5, 15, 30, and 50 iterations as a two-dimensional function.
+      \textit{Hint: For plotting you have to invert the numbering of the vector (use, for example, \lstinline{np.reshape}) and then plot the two dimensional grid using a numpy color map (greyscale).}      
+  \item Compute and discuss the observed convergence rate (see Definition 3.2.22 in the Lecture Notes).
+   \end{enumerate}
   \end{Problem}
 
 \end{Sheet}
