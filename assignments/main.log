@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.2)  23 OCT 2023 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.2)  6 DEC 2023 09:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -953,11 +953,9 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 \tikzscale@accuracy=\skip73
  (./main.aux
-(./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux)
-(./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux)
-(./sheet5.aux) (./sheet5_sol.aux) (./sheet6.aux) (./sheet6_sol.aux)
-(./sheet7.aux) (./sheet7_sol.aux) (./sheet8.aux) (./sheet8_sol.aux)
-(./sheet9.aux) (./sheet9_sol.aux) (./sheet10.aux
+(./sheet1.aux) (./sheet2.aux) (./sheet3.aux) (./sheet4.aux) (./sheet5.aux)
+(./sheet6.aux) (./sheet7.aux) (./sheet8.aux) (./sheet8_sol.aux) (./sheet9.aux)
+(./sheet10.aux
 
 LaTeX Warning: Label `DeuflhardHohmann08' multiply defined.
 
@@ -967,17 +965,7 @@ LaTeX Warning: Label `Rannacher17' multiply defined.
 
 LaTeX Warning: Label `Stoer83' multiply defined.
 
-) (./sheet10_sol.aux) (./sheet11.aux) (./sheet11_sol.aux) (./sheet12.aux
-
-LaTeX Warning: Label `DeuflhardHohmann08' multiply defined.
-
-
-LaTeX Warning: Label `Rannacher17' multiply defined.
-
-
-LaTeX Warning: Label `Stoer83' multiply defined.
-
-) (./sheet12_sol.aux))
+) (./sheet11.aux) (./sheet12.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1371,28 +1359,61 @@ pdfTeX warning (ext4): destination with the same identifier (name{classproblem.
                    \relax 
 l.93   \begin{Problem}
                       [Programming]
-(/export/home/fbretz/Documents/notes_Guido/numerik/main.bbl
-Underfull \hbox (badness 5460) in paragraph at lines 9--13
-[]\T1/cmr/m/n/10 R. Rannacher.  \T1/cmr/m/it/10 Numerik 0. Einführung in die Nu
-merische
- []
-
-
-Underfull \hbox (badness 1603) in paragraph at lines 9--13
-\T1/cmr/m/it/10 Mathematik\T1/cmr/m/n/10 .  Lecture Notes Mathematik. Heidelber
-g University
- []
-
-))pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
-s been already used, duplicate ignored
+No file main.bbl.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.22 \include{sheet8}
                       [2]
+\openout2 = `sheet8_sol.aux'.
+
+ (./sheet8_sol.tex
+<figures/lu-decomposition-of-sparse-matrix.png, id=143, 462.528pt x 346.896pt>
+File: figures/lu-decomposition-of-sparse-matrix.png Graphic file (type png)
+<use figures/lu-decomposition-of-sparse-matrix.png>
+Package pdftex.def Info: figures/lu-decomposition-of-sparse-matrix.png  used on
+ input line 13.
+(pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
+<figures/lu-decomposition-of-sparse-matrix-off4.png, id=145, 462.528pt x 346.89
+6pt>
+File: figures/lu-decomposition-of-sparse-matrix-off4.png Graphic file (type png
+)
+<use figures/lu-decomposition-of-sparse-matrix-off4.png>
+Package pdftex.def Info: figures/lu-decomposition-of-sparse-matrix-off4.png  us
+ed on input line 17.
+(pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
+
+
+LaTeX Warning: Citation `Saad00' on page 1 undefined on input line 25.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32     \end{gather*}
+                       [1
+
+
+ <./figures/lu-decomposition-of-sparse-matrix.png> <./figures/lu-decomposition-
+of-sparse-matrix-off4.png>]
+<figures/laplace-steepest-decent.png, id=156, 462.528pt x 346.896pt>
+File: figures/laplace-steepest-decent.png Graphic file (type png)
+<use figures/laplace-steepest-decent.png>
+Package pdftex.def Info: figures/laplace-steepest-decent.png  used on input lin
+e 104.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105   \end{Solution}
+                       [2]) [3 <./figures/laplace-steepest-decent.png>]
 \openout2 = `sheet9.aux'.
 
- (./sheet9.texpdfTeX warning (ext4): destination with the same identifier (name
-{classproblem.1}) has been already used, duplicate ignored
+
+(./sheet9.texpdfTeX warning (ext4): destination with the same identifier (name{
+classproblem.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.14   \begin{Problem}
@@ -1463,37 +1484,9 @@ l.84     \end{enumerate}
 
 
 ]
-(/export/home/fbretz/Documents/notes_Guido/numerik/main.bblpdfTeX warning (ext4
-): destination with the same identifier (name{cite.DeuflhardHohmann08}) has bee
-n already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 \bibitem[DH08]{DeuflhardHohmann08}
-                                      pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.Rannacher17}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.8 \bibitem[Ran17]{Rannacher17}
-                                
-Underfull \hbox (badness 5460) in paragraph at lines 9--13
-[]\T1/cmr/m/n/10 R. Rannacher.  \T1/cmr/m/it/10 Numerik 0. Einführung in die Nu
-merische
- []
-
-
-Underfull \hbox (badness 1603) in paragraph at lines 9--13
-\T1/cmr/m/it/10 Mathematik\T1/cmr/m/n/10 .  Lecture Notes Mathematik. Heidelber
-g University
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Stoer83}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.14 \bibitem[Sto83]{Stoer83}
-                             ))pdfTeX warning (ext4): destination with the same
- identifier (name{page.2}) has been already used, duplicate ignored
+No file main.bbl.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.26 \include{sheet10}
@@ -1545,37 +1538,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{classproblem.
                    \relax 
 l.27   \begin{Problem}
                       
-(/export/home/fbretz/Documents/notes_Guido/numerik/main.bblpdfTeX warning (ext4
-): destination with the same identifier (name{cite.DeuflhardHohmann08}) has bee
-n already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 \bibitem[DH08]{DeuflhardHohmann08}
-                                      pdfTeX warning (ext4): destination with t
-he same identifier (name{cite.Rannacher17}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.8 \bibitem[Ran17]{Rannacher17}
-                                
-Underfull \hbox (badness 5460) in paragraph at lines 9--13
-[]\T1/cmr/m/n/10 R. Rannacher.  \T1/cmr/m/it/10 Numerik 0. Einführung in die Nu
-merische
- []
-
-
-Underfull \hbox (badness 1603) in paragraph at lines 9--13
-\T1/cmr/m/it/10 Mathematik\T1/cmr/m/n/10 .  Lecture Notes Mathematik. Heidelber
-g University
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Stoer83}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.14 \bibitem[Sto83]{Stoer83}
-                             ))pdfTeX warning (ext4): destination with the same
- identifier (name{page.1}) has been already used, duplicate ignored
+No file main.bbl.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.30 \include{sheet12}
@@ -1587,7 +1552,8 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
  (./main.aux (./sheet1.aux) (./sheet2.aux)
 (./sheet3.aux) (./sheet4.aux) (./sheet5.aux) (./sheet6.aux) (./sheet7.aux)
-(./sheet8.aux) (./sheet9.aux) (./sheet10.aux) (./sheet11.aux) (./sheet12.aux))
+(./sheet8.aux) (./sheet8_sol.aux) (./sheet9.aux) (./sheet10.aux) (./sheet11.aux
+) (./sheet12.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -1604,38 +1570,35 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29739 strings out of 481239
- 565788 string characters out of 5920378
+ 29764 strings out of 481239
+ 566837 string characters out of 5920378
  1009808 words of memory out of 5000000
- 44224 multiletter control sequences out of 15000+600000
- 545853 words of font info for 58 fonts, out of 8000000 for 9000
+ 44265 multiletter control sequences out of 15000+600000
+ 548769 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,16n,92p,868b,1448s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Item.55} has been referenced but does not exist, 
-replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fo
-nts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pf
-b>
-Output written on main.pdf (18 pages, 268254 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on main.pdf (21 pages, 325016 bytes).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 83 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,49 +3,12 @@
 % Sheet 10
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{Sheet}[to be handed in until January 20, 2023, 2pm.]
+\begin{Sheet}[to be handed in until January 17, 2024, 11am.]
   \label{sheet10}
 
-  \begin{Problem}[{\cite[Exercise 6.21]{Saad00}}]
-    % Saad Aufgabe 21 (S. 214)
-    Consider a matrix of the form:
-    \begin{gather*}
-      \mata = \id + \alpha \matb
-    \end{gather*}
-    where $\matb$ is skew-symmetric (real), that is,
-    $\matb^T = -\matb$.
-    \begin{enumerate}[(a)]
-    \item Show that
-      \begin{gather*}
-        \frac{\scal(\mata\vx,\vx)}{\scal(\vx,\vx)} = 1
-      \end{gather*}
-      for all nonzero $\vx$.
-    \item\label{sheet10:problem1:partb} Consider the Arnoldi process
-      for $\mata$. Show that the resulting Hessenberg matrix will have
-      the following tridiagonal form
-      \begin{gather*}
-        \matH_m =
-        \begin{pmatrix}
-          1&-\eta_2&&& \\
-          \eta_2&1&-\eta_3&& \\
-           &\ddots&\ddots&\ddots& \\
-           &&\eta_{m-1}&1&-\eta_m \\
-           &&&\eta_m&1
-        \end{pmatrix}
-        .
-      \end{gather*}
-    \item Using the result of part \eqref{sheet10:problem1:partb},
-      explain why the conjugate gradient method applied to a linear
-      system with the matrix $\mata$ will still yield residual vectors
-      that are orthogonal to each other.
-    \item Can this algorithm break down before the solution is
-      reached?
-    \end{enumerate}
-  \end{Problem}
-
-  \begin{Problem}[{\cite[Exercise 6.8]{Saad00}}]
-    Show how GMRES (Algorithm 2.3.41 in the lecture notes) and Arnoldi
-    with modified Gram-Schmidt (Algorithm 2.3.29 in the lecture notes)
+  \begin{Problem}
+    Show how GMRES (Algorithm 3.4.42 in the lecture notes) and Arnoldi
+    with modified Gram-Schmidt (Algorithm 3.4.10 in the lecture notes)
     will converge on the linear system $\mata\vx=\vb$ when
     \begin{gather*}
       \mata =
@@ -65,24 +28,34 @@
     and $\vx_0 = \boldsymbol 0$.
   \end{Problem}
 
-  \begin{Problem}[Programming]
-    \hfill\\\vspace{-4ex}
-    \begin{enumerate}[(a)]
-    \item Implement the conjugate gradient method (Algorithm 2.3.57 in
-      the lecture notes).
-    \item Use your implementation to solve the 2D Laplace problem
-      \begin{gather*}
-        \matl_2\vx=\vb
-      \end{gather*}
-      as in \cref{sheet7:problem4} on \cref{sheet7} with right hand
-      side vector $\vb=(1,...,1)^T$ and initial guess
-      $\vx^{(0)}=(0,...,0)^T$ with $n=50$ and $n=100$. Observe the
-      convergence for the first 50 steps. What convergence rate do you
-      expect? Compare your results of the conjugate gradient method
-      with the steepest decent method from \cref{sheet8:problem4} of
-      \cref{sheet8}.
-    \end{enumerate}
-  \end{Problem}
+  \begin{Problem}
+	Let $\mata$ and $\matb$ be symmetric positive-definite matrices in
+	$\R^{n\times n}$. Let there be constants $c_1,c_2$ such that
+	\begin{gather*}
+	c_1 \vx^T\mata\vx \leq \vx^T\matb\vx \leq c_2 \vx^T\mata\vx.
+	\end{gather*}
+	Derive an estimate for the convergence of the conjugate gradient
+	iteration for $\mata\vx=\vb$ with preconditioner $\matb^{-1}$
+	depending on $c_1$ and $c_2$.
+	
+	\textit{Hints:} Lemma 3.4.68 in the lecture notes, and Thereom
+	2.2.17 (Courant-Fischer min-max theorem) (note, that the definition of the Rayleigh quotient is
+	independent of the choice of the inner product).
+\end{Problem}
+
+\begin{Problem}
+	Consider again matrix $\matt_{\alpha}$ as introduced in \cref{sheet6:problem4} on sheet \cref{sheet6}.
+	\begin{enumerate}[(a)]
+		\item Implement a method that computes the smallest eigenvalue of the matrix 
+		$\matt_{\alpha}$ using the inverse iteration (Algorithm 2.6.1 in the
+		lecture notes). You may reuse your code from \cref{sheet6:problem5} on sheet \cref{sheet6}. Do not calculate the inverse explicitly for
+		solving the appearing linear system, but use the conjugate
+		gradient iteration (Algorithm 3.4.28 in the lecture notes) for
+		this matter.
+		\item Use your implementation to calculate the smallest eigenvalue
+		of $\matt_{\alpha}$ with $\alpha=2$ and $n=20$.
+	\end{enumerate}
+\end{Problem}
 
   \vfill
   \bibliographystyle{alpha}

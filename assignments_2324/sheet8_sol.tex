@@ -5,25 +5,10 @@
 
 \begin{SolutionSheet}[\ref{sheet8}]
 
-  \begin{Solution}
-    \begin{enumerate}[(a)]
-    \item Sample calculation of LU factorization in
-      \lstinline{./programs/lu.py}. Sparsity patterns in figure below.
-
-      \includegraphics[width=0.8\textwidth]{figures/lu-decomposition-of-sparse-matrix}
-    \item The width of the zero diagonals gets transported to the
-       matrices of the LU factorization
-
-      \includegraphics[width=0.8\textwidth]{figures/lu-decomposition-of-sparse-matrix-off4}
-    \item The inverse is dense up to the zero diagonals that get
-      scattered over the whole inverse
-    \end{enumerate}
-
-    
-  \end{Solution}
-
   \begin{Solution}[{\cite[P-5.1 b]{Saad00}}]
-    \hfill\\
+  	\hfill\\
+  	Part (a):
+  	
     Hint 1:
     \begin{gather*}
       \scal(\mata\vd^{(k+1)},\vd^{(k+1)})
@@ -66,6 +51,12 @@
       \le \lambda_{\max}(\mata^{-1})
       = \frac1{\lambda_{\min}}.
     \end{gather*}
+    
+    Part (b): For $n > 1$, $1-\frac1{n\cond(\mata)} < 1$, and thus
+    \[\norm{\vd^{(k+1)}}_\mata \leq \left(1-\frac1{n\cond(\mata)}\right)^{\frac{k+1}{2}}
+    \norm{\vd^{(0)}}_\mata \rightarrow 0 \text{ for } n\rightarrow \infty.\]
+    That shows that $x^{(k)}$ converges to the solution $x = \mata^{-1}\vb$.
+    
 
     Final remarks:\\
     1. Since $\ve_i\in K=L$, it holds the Galerkin-orthogonality
@@ -91,6 +82,45 @@
   \end{Solution}
 
   \begin{Solution}
+  	Part (a): 
+  	\begin{equation*}
+  	\vp = \mata \vr - \frac{\scal(\mata\vr,\vr)_{\mata}}{\scal(\vr,\vr)_{\mata}} \vr.
+  	\end{equation*}
+  	Then $\scal(\mata\vr,\vp)=\scal(\vr,\vp)_{\mata}}=0$.
+  	
+  	Part(b): As defined in Definition 3.3.3, we choose $\vv\in K=L$, i.e. $\vv$ is a linear combination of $\vp$ and $\vr$.
+  	From the second condition $\vr^{(k)} - \mata\vv \perp L$, we can deduce the coefficients for v:
+  	\begin{equation*}
+  	\vr^{(k)} - \mata\vv \perp L \Rightarrow \scal(\vr-\mata\vv,\vr) = 0,\scal(\vr-\mata\vv,\vp)=0.
+  	\end{equation*}
+  	
+  	Let $\vv = \alpha \vr + \beta\vp$.
+  	\begin{align*}
+  		\scal(\vr-\mata\vv,\vr) &= 0\\
+  		\Leftrightarrow \scal(\vr,\vr) - \scal(\alpha\mata\vr + \beta\mata\vp,\vr) &= 0\\
+  		\Leftrightarrow \scal(\vr,\vr) - \alpha\scal(\mata\vr,\vr) - \beta\scal(\mata\vp,\vr) &= 0\\
+  		\Leftrightarrow \scal(\vr,\vr) - \alpha\scal(\mata\vr,\vr) - \beta\scal(\vp,\mata\vr) &= 0\\
+  		\Leftrightarrow \scal(\vr,\vr) - \alpha\scal(\mata\vr,\vr) &= 0\\
+  		\Leftrightarrow \alpha &= \frac{\scal(\vr,\vr)}{\scal(\mata\vr,\vr)}
+  	\end{align*}
+  	
+  	\begin{align*}
+  		\scal(\vr-\mata\vv,\vp) &=0\\
+  		\Leftrightarrow \scal(\vr,\vp) - \scal(\alpha\mata\vr + \beta\mata\vp,\vp) &= 0\\
+  		\Leftrightarrow \scal(\vr,\vp) - \alpha\scal(\mata\vr,\vp) - \beta\scal(\mata\vp,\vp) &=0\\
+  		\Leftrightarrow \scal(\vr,\vp) - \beta\scal(\mata\vp,\vp) &=0\\
+  		\Leftrightarrow \beta &= \frac{\scal(\vr,\vp)}{\scal(\mata\vp,\vp)}\\
+  		\Leftrightarrow \beta &= \frac{\scal(\vr,\vp)}{\scal(\mata^2\vr,\vp)}.
+  	\end{align*}
+  	
+  	In each step, first update $\vp$, then compute $\alpha$ and $\beta$ and then update $\vx$.
+  	
+  	
+  	Part (c): The method is similar to the steepest decent method.
+  	In the steepest decent method we choose $K_{\text{sd}}=L_{\text{sd}}=\spann{\vr}$ and in the method described here we choose $K = L = \spann{\vr, \mata\vr}$.
+  	In each step $K_{\text{sd}}\subset K$ and $L_{\text{sd}}\subset L$. 
+  	Thus, the method is not converging worse than the steepest decent method.
+  	Therefore, it converges.
   \end{Solution}
 
   \begin{Solution}[Programming]
