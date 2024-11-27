@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 10
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until January 17, 2024, 11am.]
+  \label{sheet10}
+
+  \begin{Problem}
+    Show how GMRES (Algorithm 3.4.42 in the lecture notes) and Arnoldi
+    with modified Gram-Schmidt (Algorithm 3.4.10 in the lecture notes)
+    will converge on the linear system $\mata\vx=\vb$ when
+    \begin{gather*}
+      \mata =
+      \begin{pmatrix}
+        &&&&1\\
+        1&&&&\\
+        &1&&&\\
+        &&1&&\\
+        &&&1&
+      \end{pmatrix},
+      \quad
+      \vb =
+      \begin{pmatrix}
+        1\\ 0\\ 0\\ 0\\ 0
+      \end{pmatrix},
+    \end{gather*}
+    and $\vx_0 = \boldsymbol 0$.
+  \end{Problem}
+
+  \begin{Problem}
+	Let $\mata$ and $\matb$ be symmetric positive-definite matrices in
+	$\R^{n\times n}$. Let there be constants $c_1,c_2$ such that
+	\begin{gather*}
+	c_1 \vx^T\mata\vx \leq \vx^T\matb\vx \leq c_2 \vx^T\mata\vx.
+	\end{gather*}
+	Derive an estimate for the convergence of the conjugate gradient
+	iteration for $\mata\vx=\vb$ with preconditioner $\matb^{-1}$
+	depending on $c_1$ and $c_2$.
+	
+	\textit{Hints:} Lemma 3.4.68 in the lecture notes, and Thereom
+	2.2.17 (Courant-Fischer min-max theorem) (note, that the definition of the Rayleigh quotient is
+	independent of the choice of the inner product).
+\end{Problem}
+
+\begin{Problem}
+	Consider again matrix $\matt_{\alpha}$ as introduced in \cref{sheet6:problem4} on sheet \cref{sheet6}.
+	\begin{enumerate}[(a)]
+		\item Implement a method that computes the smallest eigenvalue of the matrix 
+		$\matt_{\alpha}$ using the inverse iteration (Algorithm 2.6.1 in the
+		lecture notes). You may reuse your code from \cref{sheet6:problem5} on sheet \cref{sheet6}. Do not calculate the inverse explicitly for
+		solving the appearing linear system, but use the conjugate
+		gradient iteration (Algorithm 3.4.28 in the lecture notes) for
+		this matter.
+		\item Use your implementation to calculate the smallest eigenvalue
+		of $\matt_{\alpha}$ with $\alpha=2$ and $n=20$.
+	\end{enumerate}
+\end{Problem}
+
+  \vfill
+  \bibliographystyle{alpha}
+  \bibliography{bib}
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

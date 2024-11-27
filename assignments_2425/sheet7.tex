@@ -1,0 +1,100 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 7
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until December 4, 2024, 11am.]
+  \label{sheet7}
+
+  \begin{Problem}
+    Prove Theorem 3.2.15 in the Lecture Notes (Convergence of Richardson Iteration).
+  \end{Problem}
+
+  \begin{Problem}
+    Problem B.3.13 in the lecture notes.
+  \end{Problem}
+
+  \begin{Problem}[Programming]
+    \label{sheet7:problem3}
+    Let $\matl_d$ be the discretization of the $d$-dimensional Laplace
+    operator on the unit square by the five-point stencel with a
+    uniform Dirichlet boundary condition to the mesh size
+    $h=\frac1{n+1}$.  In 1D it is given in terms of the matrix
+    $\matt_2$ defined in \cref{sheet6:problem4} of \cref{sheet6} by
+    \begin{gather*}
+    \matl_1 = \frac1{h^2}\matt_2 \in\R^{n\times n}.
+    \end{gather*}
+    In 2D it is given by
+    \begin{gather*}
+    \matl_2 = \frac1{h^2}
+    \begin{pmatrix}
+    \matd &   -\id & & & \\
+    -\id &  \matd & -\id   & & \\
+    & \ddots & \ddots & \ddots & \\
+    &        &   -\id &  \matd &   -\id\\
+    &        &        &   -\id &  \matd
+    \end{pmatrix}
+    \in\R^{n^2\times n^2},
+    \end{gather*}
+    where $\id\in\R^{n\times n}$ and $\matd\in\R^{n\times n}$ are
+    defined as
+    \begin{gather*}
+    \id =
+    \begin{pmatrix}
+    1 & & \\
+    & \ddots & \\
+    &        & 1
+    \end{pmatrix}
+    \quad\text{and}\quad
+    \matd =
+    \begin{pmatrix}
+    4 & -1 &    && \\
+    -1 &  4 & -1 && \\
+    & \ddots & \ddots & \ddots & \\
+    &    & -1 & 4 & -1 \\
+    &    &    & -1 & 4
+    \end{pmatrix}.
+    \end{gather*}
+    
+    Details may be found in appendix B.3 on finite difference methods in the lecture notes. 
+    
+    Let $\mata=\matl_2\in\R^{n^2\times n^2}$ as defined above and $\vb\in \R^{n^2}$.
+    Write a program that solves the 2D Laplace problem
+    \begin{gather*}
+      \mata\vx=\vb,
+    \end{gather*}
+    with the Richardson iteration by observing the following
+    steps:
+    \begin{enumerate}[(a)]
+    \item\label{sheet7:problem4:parta} Implement a function
+      \lstinline{vmult} that performs the matrix-vector product
+      $\mata\vv$ of $\mata$ with a given vector $\vv$, and
+      returns a vector $\vw$. 
+      Do not store the system matrix in this function.
+      The parameters should only be the vector $\vv$ and, optionally, $n$.
+    \item Write a function \lstinline{richardson_step} that
+      implements a single step of the Richardson iteration. Similar to 
+      \eqref{sheet7:problem4:parta} this function should take vectors
+      $\vv$ and $\vb$, optionally $n$, and return the resulting vector $\vw$.
+      \textit{Hint: The eigenvalues of $\matl_2$ are given by the pairwise sums of the eigenvalues of $\matt_2$, see B.3.13.}
+    \item Use the null-vector $\vx^{(0)} = (0,...,0)^T$ as initial
+      guess and test your program for the constant vector $\vb=(1,...,1)^T$ with $n=20$ and $n=100$.
+      Observe the evolution of the residual in the 2-norm
+      \begin{gather*}
+        r^{(k)} = \norm{\mata\cdot\vx^{(k)}-\vb}_2
+      \end{gather*}
+      for 50 steps of the Richardson iteration.  
+   \item Plot the obtained
+      result vector after 1, 5, 15, 30, and 50 iterations as a two-dimensional function.
+      \textit{Hint: For plotting you have to invert the numbering of the vector (use, for example, \lstinline{np.reshape}) and then plot the two dimensional grid using a numpy color map (greyscale).}      
+  \item Compute and discuss the observed convergence rate (see Definition 3.2.22 in the Lecture Notes).
+   \end{enumerate}
+  \end{Problem}
+
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2023
+% Sheet 6
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until November 29, 2023, 11am.]\label{sheet6}
+  
+    \begin{Problem}
+    Prove Lemma 2.5.2:\\
+    Let $\matt\in\Rnn$ be a real, symmetric, tridiagonal matrix and
+    $\matq\matr=\matt$ its QR factorization. Then, $\tilde\matt=\matr\matq$ is also
+    symmetric and tridiagonal. Furthermore, $\matr$ is zero except for
+    its main and the first two upper diagonals.
+    
+    The same holds for the shifted version with $\sigma\in\R$,
+    \begin{gather*}
+    \matq\matr = \matt-\sigma\id,\qquad \tilde\matt = \matr\matq+\sigma\id.
+    \end{gather*}
+  \end{Problem}
+
+   \begin{Problem}
+    Prove that in case of a normal real matrix, for each complex
+    eigenvalue pair there is a $2\times 2$ matrix with according
+    invariant subspace.
+    \begin{enumerate}[(a)]
+    \item Show that complex eigenvalues and their associated
+        eigenvectors of a real matrix come in complex conjugate
+        pairs.
+    \item Choose real linear combinations of these vectors to obtain
+      the $2\times 2$ block.
+    \end{enumerate}
+  \end{Problem}
+  
+    \begin{Problem}
+    Let $\matH$ be a real Hessenberg matrix. 
+    Let $\matq_1,\matr_1,\matq_2,\matr_2$ be the matrices obtained in the explicit double-shift QR step (Algorithm 2.5.14).
+    Let $\sigma_1$ and $\sigma_2$ are the shifts in Lemma 2.5.16.
+    Show that the following equation in the proof of Lemma 2.5.16 holds:
+    \begin{equation*}
+	    \matq_1\matq_2\matr_2\matr_1 = \matm = (\matH - \sigma_1\id)(\matH - \sigma_2\id)
+    \end{equation*}
+    
+  \end{Problem}
+
+	\begin{Problem}
+		\label{sheet6:problem4}
+		Consider the $n\times n$ tridiagonal matrix
+		\begin{gather*}
+		\matt_{\alpha} =
+		\begin{pmatrix}
+		\alpha &     -1 &        &        & \\
+		-1 & \alpha &     -1 &        & \\
+		& \ddots & \ddots & \ddots & \\
+		&        &     -1 & \alpha &     -1 \\
+		&        &        &     -1 & \alpha
+		\end{pmatrix}
+		\end{gather*}
+		where $\alpha$ is a real parameter. Verify that the eigenvalues of
+		$\matt_{\alpha}$ are given by
+		\begin{gather*}
+		\lambda_j = \alpha - 2\cos(j\theta),
+		\end{gather*}
+		where
+		\begin{gather*}
+		\theta = \frac\pi{n+1},
+		\end{gather*}
+		and the eigenvectors associated with each $\lambda_j$ are given by
+		\begin{gather*}
+		\vv_j = \left(
+		\sin(j\theta),\ \sin(2j\theta),\ \ldots\ ,\ \sin(nj\theta)
+		\right)^T.
+		\end{gather*}
+		What are the conditions on $\alpha$, such that the matrix
+		$\matt_{\alpha}$ becomes positive-definite?
+	\end{Problem}
+
+	\begin{Problem}
+		\label{sheet6:problem5}
+		Implement the inverse power method (Algorithm 2.6.1 in the lecture notes).
+        To solve the system of linear equations use the functions \texttt{numpy.linalg.solve} and \texttt{numpy.linalg.lstsq}.
+        Test your implementations with the matrix $\mata_{20}$ and $\alpha=2$ from Problem \ref{sheet6:problem4} and shift parameters $\sigma=\lambda_1,\lambda_2,\lambda_{10}$.
+        Compare your results for the two different solvers.
+	\end{Problem}
+
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until December 13, 2023, 11am.]
+  \label{sheet8}
+
+  \begin{Problem}
+  	%[{\cite[P-5.1 b]{Saad00}}]
+    Let $\mata\vx = \vb$ be a linear system with a symmetric, positive
+    definite matrix $\mata\in\R^{n\times n}$ that has extremal
+    eigenvalues $\lambda_{\min}$ and $\lambda_{\max}$ and spectral
+    condition number $\cond(\mata)$. Consider the sequence
+    $\set{\vx^{(k)}}$ of one-dimensional projection processes with
+    $K = L = \spann{\ve_i}$, where $\ve_i$ denotes the $i$-th unit
+    vector in $\R^n$. The index $i$ is selected at each step $k$ to
+    be the index of a component of largest absolute value in the
+    current residual vector $\vr^{(k)} = \vb - \mata\vx^{(k)}$.
+    \begin{enumerate}[(a)]
+    \item\label{sheet8:problem2:part-a} For
+      $\vd^{(k)} = \mata^{-1}\vb - \vx^{(k)}$ show that
+      \begin{gather*}
+        \norm{\vd^{(k+1)}}_\mata
+        \leq
+        \left(1-\frac1{n\cond(\mata)}\right)^{\frac12}
+        \norm{\vd^{(k)}}_\mata.
+      \end{gather*}
+      \textit{Hint: You can use the expression
+        \begin{gather*}
+          \scal(\mata\vd^{(k+1)},\vd^{(k+1)})
+          =\scal(\mata\vd^{(k)},\vd^{(k)})
+          -\frac{\scal(\vr^{(k)},\ve_i)^2}{a_{ii}},
+        \end{gather*}
+        as well as the inequality
+        $\abs{\ve_i^T \vr^{(k)}} \geq
+        n^{-\nfrac12}\norm{\vr^{(k)}}_2$.
+    	$a_{ii}$ denotes the $i$-th diagonal element of $A$.}
+    \item Does \eqref{sheet8:problem2:part-a} prove that the algorithm
+      converges?
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}
+  	% [{\cite[P-5.6]{Saad00}}]
+    Consider the linear system $\mata\vx = \vb$, where $\mata$ is a
+    symmetric positive definite matrix. We define a projection method
+    which uses a two-dimensional space at each step. At a given step,
+    take $L = K = \spann{\vr, \mata\vr}$, where $\vr = \vb - \mata\vx$
+    is the current residual.
+    \begin{enumerate}[(a)]
+    \item For a basis of $K$ use the vector $\vr$ and the vector $\vp$
+      obtained by orthogonalizing $\mata\vr$ against $\vr$ with
+      respect to the $\mata$-inner product. Give the formula for
+      computing $\vp$ (no need to normalize the resulting vector).
+    \item Write the algorithm for performing the projection method
+      described above.
+    \item Can you explain, not compute, why the algorithm converges for any initial guess $\vx_0$?
+     \textit{Hint: Exploit the convergence
+        results for one-dimensional projection techniques.}
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}[Programming]
+    \label{sheet8:problem3}
+    \hfill\\\vspace{-6ex}
+    \begin{enumerate}[(a)]
+    \item Implement the steepest decent method (Algorithm 3.3.13 in the
+      lecture notes).
+    \item Use your implementation of the steepest decent method to
+      solve the 2D Laplace problem
+      \begin{gather*}
+        \matl_2\vx=\vb
+      \end{gather*}
+      as in \cref{sheet7:problem3} on \cref{sheet7} with right hand
+      side vector $\vb=(1,...,1)^T$ and initial guess
+      $\vx^{(0)}=(0,...,0)^T$ with $n=50$ and $n=100$. 
+    \item Compute and discuss the observed convergence rate (see 3.2.21/Definition 3.2.22 in the Lecture Notes).
+    \end{enumerate}
+  \end{Problem}
+
+
+  \begin{Problem}[Programming]
+	\label{sheet8:problem4}
+	\hfill\\\vspace{-6ex}
+	\begin{enumerate}[(a)]
+		\item Implement the minimal residual method (Algorithm 3.3.20 in the
+		lecture notes).
+		\item Use your implementation of the steepest decent method to
+		solve the 2D Laplace problem
+		\begin{gather*}
+		\matl_2\vx=\vb
+		\end{gather*}
+		as in \cref{sheet7:problem3} on \cref{sheet7} with right hand
+		side vector $\vb=(1,...,1)^T$ and initial guess
+		$\vx^{(0)}=(0,...,0)^T$ with $n=50$ and $n=100$. 
+		\item Compute and discuss the observed convergence rate (see 3.2.21/Definition 3.2.22 in the Lecture Notes).
+		Compare it with the convergence rate observed in \cref{sheet8:problem3}.
+	\end{enumerate}
+  \end{Problem}
+
+  \vfill
+  \bibliographystyle{alpha}
+  \bibliography{bib}
+
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

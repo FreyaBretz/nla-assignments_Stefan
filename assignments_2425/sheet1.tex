@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class winter semester 2024/2025
+% Sheet 1                             
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until October 23, 2024, 11am.]
+  \label{sheet1}
+  
+  Please hand in your solutions in groups of 2-4. Solutions submitted by only one person will not be graded.
+  The solutions for non-programming problems may be either handed in online via Moodle or on paper (Mathematikon, 1st floor, letterbox to be determined). 
+  The solutions for programming problems have to be handed in online via Moodle. Specifics may be found in the respective problems.
+  To recieve the points for the exercises, write everyones first and last name on every hand-in. 
+  Details will be discussed in the exercise group on Thursday. 
+ 
+  If you currently don’t have access to Moodle, please contact your tutor Freya in the exercise group or via Mail (freya.jensen[at]iwr.uni-heidelberg.de). 
+  
+\begin{Problem}
+  Review the following items and write down at least one of the
+  definitions and one of the theorems with proof in detail.
+  \begin{itemize}
+  \item Definition of a projection
+  \item Definition of an orthogonal projection
+  \item Theorem: Orthogonal projection is uniquely determined by
+    subspace
+
+    Consider a finite-dimensional space $V$ with inner product
+    $\scal(\cdot,\cdot)$ and a subspace $W\subset V$. Then, there
+    exists a unique orthogonal projection
+    \begin{gather*}
+       P_W:V\to W.
+    \end{gather*}
+  \item Theorem: Best Approximation Theorem
+
+    Let $W$ be a subspace of $\R^n$, let $\vx$ be any vector in
+    $\R^n$, and let $\tilde{\vx}$ be the orthogonal projection of
+    $\vx$ onto $W$. Then $\tilde{\vx}$ is the closest point in $W$ to
+    $\vx$, in the sense that
+    \begin{gather*}
+      \norm{\vx - \tilde{\vx}} < \norm{\vx - \vw}
+    \end{gather*}
+    for all $\vw$ in $W$ distinct from $\vx$.
+  \item Theorem: Orthogonal projection in orthonormal basis
+    
+    Let $B = \{\vu_1,\vu_2, ...,\vu_p\}$ be an orthonormal basis of a
+    subspace $W$ of a finite-dimensional space $V$ with inner product
+    $\scal(\cdot,\cdot)$. Then, the orthogonal projection $P_i$ of any
+    vector $\vv\in V$ onto $\vu_i$, and the orthogonal projection
+    $P_W$ of any vector $\vv\in V$ onto $W$ have the following
+    expressions, respectively:
+    \begin{gather*}
+      P_i(\vv) = \scal(\vv, \vu_i) \vu_i,\qquad i = 1, 2, ..., p,
+      \\
+      P_W(\vv) = \sum_{i=1}^p \scal(\vv, \vu_i) \vu_i,
+    \end{gather*}
+    and
+    \begin{gather*}
+      \vv = P_W(\vv) + \vz,\qquad \vz \perp W.
+    \end{gather*}
+
+  \item Theorem: Parseval identity
+
+    Suppose that $W$ is a finite-dimensional linear space with inner
+    product $\scal(\cdot,\cdot)$. Let $\{\ve_i\}$, $i=1,...,n$ be an
+    orthonormal basis of $W$. Then, for every $\vw\in W$ it holds
+    \begin{gather*}
+      \sum_{i=1}^n \abs{\scal(\vw,\ve_i)}^2
+      = \norm{\vw}^2.
+    \end{gather*}
+  \end{itemize}
+\end{Problem}
+
+\begin{Problem}[Programming]
+    To familiarize yourself with the C++ library \href{https://arma.sourceforge.net/}{Armadillo} write a function \texttt{gauss\_eliminiation} that performs the Gaussian elimination for a system of linear equations $Ax = b$.
+    You should use the armadillo matrix class and vector class to store the system of linear equations, handle the result and perform the vector matrix multiplication in the end.
+    Write a \texttt{main} function in which you test your implementation with the following system of linear equations:
+	\[
+	\begin{array}{rcrcrcrcr}
+		2x_1 & + & 8x_2 & + & 10x_3 & + & 10x_4 & = & 0\\
+		x_1 & + & 5x_2 & + & 2x_3 & + & 9x_4 & = & 1\\
+		-3x_1 & - & 10x_2 & - & 21x_3 & - & 6x_4 & = & -4\\
+		-2x_1 & - & 3x_2 & - & 4x_3 & -& 7x_4 & = & -1
+	\end{array}
+	\]
+    In order to test the correctness of your result you should perform a matrix vector multiplication to see whether the original matrix $A$ multiplied with the resulting vector $x$ yields the vector $b$.
+    We will also discuss this problem in the programming tutorial on Thursday.
+
+\end{Problem}
+
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 
