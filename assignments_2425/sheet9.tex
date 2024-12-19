@@ -3,55 +3,53 @@
 % Sheet 9
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{Sheet}[discussion in the first tutorials of January, 2023]
+\begin{Sheet}[to be handed in until December 18, 2024, 11am.]
   \label{sheet9}
 
+	\begin{Problem}
+		Consider a matrix of the form 
+		\[\mata = \identity + \alpha\matb, \]
+		where $\matb$ is skew symmetric (real), i.e., such that $\matb^T = -\matb$.
+		\begin{enumerate}[(a)]
+			\item Show that $\langle\mata\vx,\vx\rangle/\langle\vx,\vx\rangle = 1$ for all $\vx \neq 0$.
+			\item Consider the Arnoldi process for $\mata$. 
+				Show that the resulting Hessenberg matrix will have the following tridiagonal form:
+				\[ \matH_m = \begin{pmatrix}
+					1 & -\eta_2 & & & \\
+					\eta_2 & 1 & -\eta_3 & & \\
+					  &  & \cdots & & \\
+					  &  & \eta_{m-1} & 1 & -\eta_m \\
+					  &  &  & \eta_m & 1 
+				\end{pmatrix}.\]
+			\item Using the result of part (b), explain why the CG algorithm applied as is to a linear system with the matrix $\mata$, which is nonsymmetric,
+				will still yield residual vectors that are orthogonal to each other.
+		\end{enumerate}
+	\end{Problem}
 
-  This exercise sheet reviews some topics of this lecture. Your
-  answers do not have to be handed in, but the exercises will be
-  discussed in the tutorials of the first week of January.
+	\begin{Problem}
+		Consider the CG Method described in Algorithm 3.4.31.
+		Assume, in line 4, $\langle \mata\vp_m,\vp_m\rangle = 0$ and thus the algorithm terminates there.
+		Why is the Krylov space $K_m$ invariant?
+		Why have we found the exact solution then?
+	\end{Problem}
 
-  \begin{Problem}
-    Recapitulate the concept of an orthogonal projection and an
-    oblique projection. What are use cases of both and why are they
-    important for numerical linear algebra?
-  \end{Problem}
+\begin{Problem}
+	Consider again matrix $\matt_{\alpha}$ as introduced in \cref{sheet7:problem3}} on sheet \cref{sheet7}.
+	\begin{enumerate}[(a)]
+		\item Implement a method that computes the smallest eigenvalue of the matrix 
+		$\matl_2$ using the inverse iteration (Algorithm 2.6.2 in the
+		lecture notes). Do not calculate the inverse explicitly for
+		solving the appearing linear system, but use the conjugate
+		gradient iteration (Algorithm 3.4.31 in the lecture notes) for
+		this matter.
+		\item Use your implementation to calculate the smallest eigenvalue
+		of $\matl_2$ with $n=20$.
+	\end{enumerate}
+\end{Problem}
 
-  \begin{Problem}
-    What methods presented in the lecture can be used for computing or
-    estimating the eigenvalues of a matrix $\mata$? Sort by properties
-    of the methods, as well as by conditions on $\mata$.
-  \end{Problem}
-
-  \begin{Problem}
-    How can the QR factorization of a given matrix be computed?
-    Discuss downsides and benefits of the different methods.
-  \end{Problem}
-
-  \begin{Problem}
-    Householder reflections vs. Givens rotations: which one is more
-    cost-efficient in the general case? When using the other one is
-    advantageous?
-  \end{Problem}
-
-  \begin{Problem}
-    Which of the discussed methods for solving eigenvalue problems can
-    be implemented without explicitly forming a matrix?
-  \end{Problem}
-
-  \begin{Problem}
-    Consider an $n\times n$ matrix that has $n$ distinct eigenvalues
-    such that $\abs{\lambda_i} \neq \abs{\lambda_j}$ for $i\neq
-    j$. How can the eigenvalue with the second largest absolute value
-    be computed?
-  \end{Problem}
-
-  \begin{Problem}
-    When does one step of the Gauss-Seidel iteration provide the
-    direct solution of a linear system? Consider an upper triangular
-    matrix to visualize this matter.
-  \end{Problem}
-
+  \vfill
+  \bibliographystyle{alpha}
+  \bibliography{bib}
 \end{Sheet}
 
 

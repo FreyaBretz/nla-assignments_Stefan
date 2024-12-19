@@ -1,65 +1,57 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Numerical Linear Algebra class 2022 
+% Numerical Linear Algebra class 2024/25 
 % Sheet 10
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{Sheet}[to be handed in until January 17, 2024, 11am.]
+\begin{Sheet}[discussion in the first tutorials of January, 2025]
   \label{sheet10}
 
+
+  This exercise sheet reviews some topics of this lecture. Your
+  answers do not have to be handed in, but the exercises will be
+  discussed in the tutorials of the first week of January.
+
   \begin{Problem}
-    Show how GMRES (Algorithm 3.4.42 in the lecture notes) and Arnoldi
-    with modified Gram-Schmidt (Algorithm 3.4.10 in the lecture notes)
-    will converge on the linear system $\mata\vx=\vb$ when
-    \begin{gather*}
-      \mata =
-      \begin{pmatrix}
-        &&&&1\\
-        1&&&&\\
-        &1&&&\\
-        &&1&&\\
-        &&&1&
-      \end{pmatrix},
-      \quad
-      \vb =
-      \begin{pmatrix}
-        1\\ 0\\ 0\\ 0\\ 0
-      \end{pmatrix},
-    \end{gather*}
-    and $\vx_0 = \boldsymbol 0$.
+    Recapitulate the concept of an orthogonal projection and an
+    oblique projection. What are use cases of both and why are they
+    important for numerical linear algebra?
   \end{Problem}
 
   \begin{Problem}
-	Let $\mata$ and $\matb$ be symmetric positive-definite matrices in
-	$\R^{n\times n}$. Let there be constants $c_1,c_2$ such that
-	\begin{gather*}
-	c_1 \vx^T\mata\vx \leq \vx^T\matb\vx \leq c_2 \vx^T\mata\vx.
-	\end{gather*}
-	Derive an estimate for the convergence of the conjugate gradient
-	iteration for $\mata\vx=\vb$ with preconditioner $\matb^{-1}$
-	depending on $c_1$ and $c_2$.
-	
-	\textit{Hints:} Lemma 3.4.68 in the lecture notes, and Thereom
-	2.2.17 (Courant-Fischer min-max theorem) (note, that the definition of the Rayleigh quotient is
-	independent of the choice of the inner product).
-\end{Problem}
+    What methods presented in the lecture can be used for computing or
+    estimating the eigenvalues of a matrix $\mata$? Sort by properties
+    of the methods, as well as by conditions on $\mata$.
+  \end{Problem}
 
-\begin{Problem}
-	Consider again matrix $\matt_{\alpha}$ as introduced in \cref{sheet6:problem4} on sheet \cref{sheet6}.
-	\begin{enumerate}[(a)]
-		\item Implement a method that computes the smallest eigenvalue of the matrix 
-		$\matt_{\alpha}$ using the inverse iteration (Algorithm 2.6.1 in the
-		lecture notes). You may reuse your code from \cref{sheet6:problem5} on sheet \cref{sheet6}. Do not calculate the inverse explicitly for
-		solving the appearing linear system, but use the conjugate
-		gradient iteration (Algorithm 3.4.28 in the lecture notes) for
-		this matter.
-		\item Use your implementation to calculate the smallest eigenvalue
-		of $\matt_{\alpha}$ with $\alpha=2$ and $n=20$.
-	\end{enumerate}
-\end{Problem}
+  \begin{Problem}
+    How can the QR factorization of a given matrix be computed?
+    Discuss downsides and benefits of the different methods.
+  \end{Problem}
 
-  \vfill
-  \bibliographystyle{alpha}
-  \bibliography{bib}
+  \begin{Problem}
+    Householder reflections vs. Givens rotations: which one is more
+    cost-efficient in the general case? When using the other one is
+    advantageous?
+  \end{Problem}
+
+  \begin{Problem}
+    Which of the discussed methods for solving eigenvalue problems can
+    be implemented without explicitly forming a matrix?
+  \end{Problem}
+
+  \begin{Problem}
+    Consider an $n\times n$ matrix that has $n$ distinct eigenvalues
+    such that $\abs{\lambda_i} \neq \abs{\lambda_j}$ for $i\neq
+    j$. How can the eigenvalue with the second largest absolute value
+    be computed?
+  \end{Problem}
+
+  \begin{Problem}
+    When does one step of the Gauss-Seidel iteration provide the
+    direct solution of a linear system? Consider an upper triangular
+    matrix to visualize this matter.
+  \end{Problem}
+
 \end{Sheet}
 
 

@@ -6,9 +6,37 @@
 \begin{SolutionSheet}[\ref{sheet7}]
 
   \begin{Solution}
+	  The Richardson iteration can be written as
+	  \[F(x) = (1-\omega\mata)x + \omega b.\]
+	  Using the Banach fixed-point theorem, the method converges if $\norm{1-\omega\mata} < 1$.
+
+	  Since $\mata$ is symmetric, $1-\omega\mata$ is symmetrix and thus the spetral norm of $1-\omega\mata$ is given by the maximum of the absolute values of its eigenvalues.
+	  We can compute the new eigenvalues from the eigenvalues of $\mata$. Let $\vx$ denote an eigenvector of $\mata$ with eigenvalue $\lambda$:
+	  \[(1-\omage\mata)\vx = \vx - \omega\lambda\vx = (1-\omega\lambda)\vx.\]
+	  For any eigenvalue $\lambda$ of $\mata$ we have: $\omega\lambda < \frac{2\lambda}{\lambda_{\text{max}}}$.
+	  Since $\mata$ is positive definite, we have
+	  \[0 < \frac{2\lambda_{\text{min}}}{\lambda_{\text{max}}} < \frac{2\lambda_{\text{min}}}{\lambda_{\text{max}}} = 2.\].
+	  Thus, $-1 < 1-\omega\lambda < 1$ for any eigenvalue $\lambda$ of $\mata$.
+	  This proves that $\norm{1-\omega\mata} < 1$.
+
   \end{Solution}
 
   \begin{Solution}
+	  \begin{enumerate}
+	    \item First equality is for the first entry in the vector: 
+		    \[(2-2\cos(j\teta))\sin(j\teta) = 2\sin(j\teta) - 2\cos(j\teta)\sin(j\teta) = 2\sin(j\teta) - \sin(2j\teta)\]
+	   	Here we have used the addition theorem for trigonometric functions.
+	\item For all other entries in $\matt\vv_j$ we have to show:
+		\[2\cos(j\teta)\sin(kj\teta) = \sin((k-1)j\teta) + \sin((k+1)j\teta).\]
+	    But 
+			  \begin{align*}
+				  \sin((k-1)j\teta) + \sin((k+1)j\teta) &= \sin(kj\teta - j\teta) + \sin(kj\teta + j\teta)\\
+				  					&= \sin(kj\teta)\cos(j\teta) - \cos(kj\teta)\sin(j\teta) \\
+									&\hspace +\sin(kj\teta)\cos(j\teta) + \cos(kj\teta)\sin(j\teta)\\
+									&= 2\cos(j\teta)\sin(kj\teta).
+			\end{align*}
+	\item For the last row keep in mind that $\sin((n+1)j\teta) = \sin(j\pi) = 0$.
+	\end{enumerate}
   \end{Solution}
 
   \begin{Solution}

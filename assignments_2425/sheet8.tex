@@ -3,7 +3,7 @@
 % Sheet 8
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{Sheet}[to be handed in until December 13, 2023, 11am.]
+\begin{Sheet}[to be handed in until December 11, 2024, 11am.]
   \label{sheet8}
 
   \begin{Problem}
@@ -33,11 +33,11 @@
           -\frac{\scal(\vr^{(k)},\ve_i)^2}{a_{ii}},
         \end{gather*}
         as well as the inequality
-        $\abs{\ve_i^T \vr^{(k)}} \geq
+        $\norm{\vr^{(k)}}_{\infty} = \abs{\ve_i^T \vr^{(k)}} \geq
         n^{-\nfrac12}\norm{\vr^{(k)}}_2$.
     	$a_{ii}$ denotes the $i$-th diagonal element of $A$.}
     \item Does \eqref{sheet8:problem2:part-a} prove that the algorithm
-      converges?
+      converges? Why do we care about its convergence?
     \end{enumerate}
   \end{Problem}
 
@@ -65,7 +65,7 @@
     \label{sheet8:problem3}
     \hfill\\\vspace{-6ex}
     \begin{enumerate}[(a)]
-    \item Implement the steepest decent method (Algorithm 3.3.13 in the
+    \item Implement the steepest decent method (Algorithm 3.3.14 in the
       lecture notes).
     \item Use your implementation of the steepest decent method to
       solve the 2D Laplace problem
@@ -84,7 +84,7 @@
 	\label{sheet8:problem4}
 	\hfill\\\vspace{-6ex}
 	\begin{enumerate}[(a)]
-		\item Implement the minimal residual method (Algorithm 3.3.20 in the
+		\item Implement the minimal residual method (Algorithm 3.3.21 in the
 		lecture notes).
 		\item Use your implementation of the steepest decent method to
 		solve the 2D Laplace problem
