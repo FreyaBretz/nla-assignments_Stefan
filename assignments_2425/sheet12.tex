@@ -1,38 +1,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Numerical Linear Algebra class 2022 
+% Numerical Linear Algebra class 2024
 % Sheet 12
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{Sheet}[to be handed in until January 31, 2024, 11am.]
+\begin{Sheet}[to be handed in until February 22, 2025, 2pm.]
   \label{sheet12}
-
-  The following problems review some topics of this lecture.
-They are a good preparation for the oral exam and they will also help with better understanding the programming problem and project.
-Please summarize your thoughts on those using bullet points.
-
+  
   \begin{Problem}
-	Householder reflections vs. Givens rotations: which one is more
-	cost-efficient in the general case? When using the other one is
-	advantageous?
-\end{Problem}
+	  Let $\mata$ and $\matb$ be symmetric positive-definite matrices in $\R^{n\times n}$.
+	  Let there be constants $c_1,c_2$ auch that 
+	  \begin{gather*}
+		  c_1 \vx^T\mata\vx \leq \vx^T\matb\vx \leq c_2 \vx^T\mata\vx.
+	  \end{gather*}
+	  Derive an estimate for the convergence of the conjugate gradient iteration for $\mata\vx=\vb$ with preconditioner $\matb^{-1}$ depending on $c_1$ and $c_2$.
 
-\begin{Problem}
-	Which of the discussed methods for solving eigenvalue problems can
-	be implemented without explicitly forming a matrix?
-\end{Problem}
+	  \textit{Hints:} Lemma 3.4.72 in the lecture notes and Theorem 2.2.17 (note that the definition of the Rayleigh quotient is independent of the choice of inner product).
 
-\begin{Problem}
-	Consider an $n\times n$ matrix that has $n$ distinct eigenvalues
-	such that $\abs{\lambda_i} \neq \abs{\lambda_j}$ for $i\neq
-	j$. How can the eigenvalue with the second largest absolute value
-	be computed?
-\end{Problem}
+  \end{Problem}
+  
+  \begin{Problem}
+    Develop a modified version of the non-Hermitian Lanczos algorithm
+    that produces a sequence of vectors $\vv_i$ ,$\vw_i$ that are such
+    that each $\vv_i$ is orthogonal to every $\vw_j$ with $j\neq i$
+    and $\norm{\vv_i}=\norm{\vw_i}=1$ for all $i$.
+  \end{Problem}
 
-\begin{Problem}
-	When does one step of the Gauss-Seidel iteration provide the
-	direct solution of a linear system? Consider an upper triangular
-	matrix to visualize this matter.
-\end{Problem}
+	\begin{Problem}
+		Find an example of a matrix with a real spectrum for which the QR method will not converge to an upper triangular matrix.
+
+	\end{Problem}
+
+  \vfill
+  \bibliographystyle{alpha}
+  \bibliography{bib}
 
 \end{Sheet}
 

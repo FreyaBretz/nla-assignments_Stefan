@@ -3,37 +3,35 @@
 % Sheet 11
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{Sheet}[to be handed in until January 24, 2024, 11am.]
+\begin{Sheet}[to be handed in until January 15, 2025, 11am.]
   \label{sheet11}
   
 \begin{Problem}
-  	Use your implementation of Problem 2(a) on Sheet 9 and 
+	Use your implementation of the Conjugate Gradient Method (Problem 3 on Sheet 9) and 
   	augment it such that you can compute the eigenvalues of the projected matrix $\matH_m$ in each step.
-  	For the computation of the eigenvalues you could, for example, use your implementation of the QR iteration (Problem 4 on Sheet 5).
-  	Test your implementation with $\matl_2$ as in Problem 2(b) on Sheet 9 and observe the convergence of extremal eigenvalues $\lambda_{\text{min}}$ and $\lambda_{\text{max}}$.
+  	For the computation of the eigenvalues you could, for example, use your implementation of the QR iteration (Problem 3 on Sheet 5).
+  	Test your implementation with $\matl_2$ as in Problem 3 on Sheet 9 and observe the convergence of extremal eigenvalues $\lambda_{\text{min}}$ and $\lambda_{\text{max}}$.
 \end{Problem}
   
-  The following problems review some topics of this lecture.
-  They are a good preparation for the oral exam and they will also help with better understanding the programming problem and project.
-  Please summarize your thoughts on those using bullet points.
-
-\begin{Problem}
-	Recapitulate the concept of an orthogonal projection and an
-	oblique projection. What are use cases of both and why are they
-	important for numerical linear algebra?
-\end{Problem}
-
-\begin{Problem}
-	What methods presented in the lecture can be used for computing or
-	estimating the eigenvalues of a matrix $\mata$? Sort by properties
-	of the methods, as well as by conditions on $\mata$.
-\end{Problem}
-
-\begin{Problem}
-	How can the QR factorization of a given matrix be computed?
-	Discuss downsides and benefits of the different methods.
-\end{Problem}
-
+	\begin{Problem}
+		Show that GMRES and Arnoldi with modified Gram-Schmidt will convwerge on the linear system $\mata\vx = \vb$ when
+		\begin{gather*}
+			\mata = 
+			\begin{pmatrix}
+				&&&&1\\
+				1&&&&\\
+				&1&&&\\
+				&&1&&\\
+				&&&1&
+			\end{pmatrix},
+			\quad
+			\vb = 
+			\begin{pmatrix}
+				1\\ 0\\ 0 \\ 0\\ 0\\
+			\end{pmatrix},
+		\end{gather*}
+		and $\vx_0 = \boldsymbol 0$.
+	\end{Problem}
 \end{Sheet}
 
 

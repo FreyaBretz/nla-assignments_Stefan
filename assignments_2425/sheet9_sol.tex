@@ -6,18 +6,33 @@
 \begin{SolutionSheet}[\ref{sheet9}]
 
   \begin{Solution}
-  \end{Solution}
-
-  \begin{Solution}
-  \end{Solution}
-
-  \begin{Solution}
-  \end{Solution}
-
-  \begin{Solution}
-  \end{Solution}
-
-  \begin{Solution}
+	  \begin{enumerate}[(a)]
+		\item We want to show that $\langle \mata x,x\rangle / \langle x, x\rangle = 0$.
+			\begin{equation}
+				\langle \matb\vx,\vx \rangle = \langle\vx, \matb\vx\rangle = \langle \matb^T\vx,\vx\rangle = -\langle \matb\vx,\vx\rangle
+			\end{equation}
+			Thus, $\langle\matb\vx,\vx\rangle = 0$ and therefore,
+			  \begin{equation}
+				  \scal(\mata\vx,\vx) = \scal(\vx + \alpha\matb\vx,\vx) = \scal(\vx,\vx) + \alpha\scal(\matb\vx,\vx) = \scal(\vx,\vx).
+			  \end{equation}
+		  \item Using Lemma 3.4.12 we have
+			\begin{equation}
+				\mata\matq_m = \matq_m\matH_m + \vw_m\ve_m^T.
+			\end{equation}
+			  Using this and $\mata = \identity + \alpha\matb$ we can rearrange into
+			  \begin{equation}
+				  \matH_m = \identity + \alpha\matq_m^T\matb\matq_m - \matq_m^T\vw_m\ve_m^T.
+			  \end{equation}
+			  From the Arnoldi algorithm (Algorithm 3.4.11) we get that $\vw_m$ is chosen such that it is orthogonal to $\vq_1,\ldots,\vq_m$ 
+			  and therefore $\matq_m^T\vw_m\ve_m^T=0$.
+			  Furthermore,
+			  \begin{equation}
+				  (\matq_m^T\matb\matq_m)^T = \matq_m^T\matb^T\matq_m = - \matq_m^T\matb\matq_m,
+			  \end{equation}
+			  i.e. $\matq_m^T\matb\matq_m$ is skew-symmetric with zeros on the diagonal.
+			  This shows that $\matH_m$ admits the desired structure.
+		  \item ...
+    \end{enumerate}	 
   \end{Solution}
 
   \begin{Solution}
