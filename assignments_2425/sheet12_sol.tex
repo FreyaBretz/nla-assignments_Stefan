@@ -1,18 +1,88 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Numerical Linear Algebra class 2022 
-% Solutions to Sheet 11
+% Solutions to Sheet 12
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{SolutionSheet}[\ref{sheet11}]
+\begin{SolutionSheet}[\ref{sheet12}]
 
   \begin{Solution}
+	  $\mata$ and $\matb$ are symmetric, positive-definite, thus
+	  \begin{equation*}
+		  \scal(\matb^{-1}\mata\vx,\vx)_{\matb} = \scal(\mata\vx,\vx) = 
+		  \scal(\vx,\mata\vx) = \scal(\vx,\matb\matb^{-1}\mata\vx) = 
+		  \scal(\vx,\matb^{-1}\mata\vx)_{\matb}.
+	  \end{equation*}
+
+	  For the CG-method we have the estimate:
+	  \begin{equation*}
+		  \norm{e^{(m)}}_{\mata} \leq 2* \left( \frac{\sqrt{\cond(\mata)} -1}{\sqrt{\cond(\mata)} + 1} \right)^m \norm{e^{(0)}}_{\mata}.
+	  \end{equation*}
+
+	  The condition number for $\matb^{-1}\mata$ is given by 
+	  \begin{equation*}
+		  \cond(\matb^{-1}\mata) = \frac{\sigma_{\mathrm{max}}(\matb^{-1}\mata)}{\sigma_{\mathrm{max}}(\matb^{-1}\mata)}.
+	  \end{equation*}
+
+	  We want to find an estimate for the condition number, using the Rayleigh quotient.
+	  \begin{equation*}
+		  R_{\matb^{-1}\mata} (\vx) = \frac{\scal(\matb^{-1}\mata\vx,\vx)_{\matb}}{\scal(\vx,\vx)_{\matb}} = \frac{\scal(\mata\vx,\vx)}{\scal(\vx,\vx)_{\matb}} = \frac{\vx^T \mata\vx}{\vx^T\matb\vx}.
+	  \end{equation*}
+
+	  Thus, for all $\vx$ in $\mathbb{R}^n$, we have the estimate
+	  \begin{equation*}
+		1/c_2 \leq R_{\matb^{-1}\mata} (\vx) \leq 1/c_1.
+	  \end{equation*}
+
+	  Using Courant-Fischer, we get 
+	  \[1/c_2 \leq \sigma_{\mathrm{min}} (\matb^{-1}\mata) \leq 1/c_1\]
+	  and 
+	  \[1/c_2 \leq \sigma_{\mathrm{max}} (\matb^{-1}\mata) \leq 1/c_1.\]
+
+	  For the condition number we then have
+	  \begin{equation*}
+		  0 < c_1/c_2 \leq \cond(\matb^{-1}\mata) \leq c_2/c_1.
+	  \end{equation*}
+
+	  For the convergence of the CG-method with preconditioner $\matb^{-1}$ this means
+	  \begin{align*}
+		 \norm{e^{(m)}}_{\matb^{-1}\mata} &\leq 2* \left( \frac{\sqrt{\cond(\matb^{-1}\mata)} -1}{\sqrt{\cond(\matb^{-1}\mata)} + 1} \right)^m \norm{e^{(0)}}_{\matb^{-1}\mata}\\
+		 &\leq 2* \left( \frac{\sqrt{c_2/c_1} -1}{\sqrt{c_1/c_2} + 1} \right)^m \norm{e^{(0)}}_{\matb^{-1}\mata}\\
+		  &\leq 2* \left( \frac{c_2 - \sqrt{c_1 c_2}}{c_1 + \sqrt{c_1 c_2}} \right)^m \norm{e^{(0)}}_{\matb^{-1}\mata}.
+	  \end{align}
+
+
     % Es sollte rauskommen: c_1 und c_2 sind Schranken für die EW von
     % B^-1A
 
     % EW im B-scalar produkt abschätzen über Rayleigh
   \end{Solution}
 
-  \begin{Solution}[Programming]
+  \begin{Solution}
+	  Consider for example the matrix 
+	  \begin{gather*}
+		  \mata = \begin{pmatrix}
+			  0 & 1 \\
+			  1 & 0 
+		  \end{pmatrix}
+	  \end{gather*}
+	Then $\mata$ is orthonormal and the QR-decomposition of $\mata$ is given by $\mata$ and $\identity$.
+	  In each iteration step we have $\mata_k = \mata$, which is not an upper tridiagonal matrix.
+
+	  Choosing 
+	  \begin{gather*}
+		  \matq = \frac{1}{\sqrt{2}} * \begin{pmatrix}
+			  1 & 1 \\
+			  1 & -1 
+		  \end{pmatrix}
+	  \end{gather*}
+	  gives us the correct Schur form
+	  \begin{gather*}
+		  \matr = \begin{pmatrix}
+			  1 & 0 \\
+			  0 & -1
+		  \end{pmatrix}.
+	  \end{gather*}
+
   \end{Solution}
 
 \end{SolutionSheet}
